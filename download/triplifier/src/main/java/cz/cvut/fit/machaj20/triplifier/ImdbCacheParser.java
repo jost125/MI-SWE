@@ -34,7 +34,7 @@ public class ImdbCacheParser {
 
 		while(matcher.find()){
 			List<String> entry = new ArrayList<>();
-			entry.add("http://www.imdb.com/" + matcher.group("url"));
+			entry.add("http://www.imdb.com" + matcher.group("url"));
 			entry.add(matcher.group("actors"));
 			entry.add(matcher.group("movie"));
 			entry.add(matcher.group("year"));
