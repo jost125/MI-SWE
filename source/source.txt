@@ -1,0 +1,13 @@
+Zvolil jsem si 3 zdroje o filmech
+
+1. dataset DVD
+	- formát csv
+	- link: http://www.hometheaterinfo.com/
+2. dataset hodnocení filmů vyscrapovaných z twitteru (nescrapoval jsem sám, bylo připraveno)
+	- vlastní formát (sloupce oddělené ::)
+	- link: https://raw.github.com/sidooms/MovieTweetings
+3. dataset imdb top 250 filmů
+	- formát html
+	- link: http://www.imdb.com/
+
+Tool použitý pro triplifykaci
