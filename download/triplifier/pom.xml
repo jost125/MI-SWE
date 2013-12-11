@@ -42,16 +42,23 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.2</version>
         </dependency>
+
+		 <dependency>
+			 <groupId>org.apache.jena</groupId>
+			 <artifactId>apache-jena-libs</artifactId>
+			 <type>pom</type>
+			 <version>2.11.0</version>
+		 </dependency>
     </dependencies>
 
     <build>
-        <finalName>SpringApp</finalName>
+        <finalName>triplify</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -62,6 +69,37 @@
                     </includes>
                 </configuration>
             </plugin>
+			  <plugin>
+				  <artifactId>maven-assembly-plugin</artifactId>
+				  <configuration>
+					  <archive>
+						  <manifest>
+							  <mainClass>cz.cvut.fit.machaj20.triplifier.Main</mainClass>
+						  </manifest>
+					  </archive>
+					  <descriptorRefs>
+						  <descriptorRef>jar-with-dependencies</descriptorRef>
+					  </descriptorRefs>
+				  </configuration>
+			  </plugin>
+			  <plugin>
+				  <groupId>org.apache.maven.plugins</groupId>
+				  <artifactId>maven-dependency-plugin</artifactId>
+				  <version>2.5.1</version>
+				  <executions>
+					  <execution>
+						  <id>copy-dependencies</id>
+						  <phase>package</phase>
+						  <goals>
+							  <goal>copy-dependencies</goal>
+						  </goals>
+						  <configuration>
+							  <includeGroupIds>log4j</includeGroupIds>
+							  <outputDirectory>${project.build.directory}/dependency-jars/</outputDirectory>
+						  </configuration>
+					  </execution>
+				  </executions>
+			  </plugin>
         </plugins>
     </build>
 </project>
