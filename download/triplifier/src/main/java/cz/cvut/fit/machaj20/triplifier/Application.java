@@ -23,10 +23,8 @@ public class Application {
 	}
 
 	public void run(String datasetsPath, String outputPath) {
-		File outputFile = new File(outputPath + "/triplified.ttl");
-		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile))) {
-			triplifier.triplify(datasetsPreparer.prepareData(datasetsPath), bos);
-			System.out.println("triplified in file " + outputFile.getAbsolutePath());
+		try {
+			triplifier.triplify(datasetsPreparer.prepareData(datasetsPath), outputPath);
 		} catch (IOException e) {
 			System.err.println(e.getMessage());
 			System.exit(-1);

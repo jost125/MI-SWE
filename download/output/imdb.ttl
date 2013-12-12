@@ -1,0 +1,2309 @@
+@prefix genre: <http://schema.org/genre> .
+@prefix person: <http://schema.org/Person#> .
+@prefix productionCompany: <http://schema.org/productionCompany> .
+@prefix ratingValue: <http://schema.org/ratingValue> .
+@prefix name:  <http://schema.org/name> .
+@prefix movie: <http://schema.org/Movie#> .
+@prefix playedBy: <http://schema.org/actor> .
+@prefix year:  <http://schema.org/copyrightYear> .
+@prefix aggregateRating: <http://schema.org/AggregateRating#> .
+@prefix rating: <http://schema.org/aggregateRating> .
+@prefix url:   <http://schema.org/url> .
+
+movie:121  playedBy:  person:7 , person:6 , person:255 ;
+        year:      "1995" ;
+        name:      "Nelítostný souboj" ;
+        url:       <http://www.imdb.com/title/tt0113277/?ref_=chttp_tt_121> .
+
+person:370  name:  "Paul Thomas Anderson (dir.)" .
+
+person:513  name:  "Louis Wolheim" .
+
+person:268  name:  "Rutger Hauer" .
+
+person:7  name:  "Robert De Niro" .
+
+person:489  name:  "Hubert Koundé" .
+
+person:236  name:  "Diane Kruger" .
+
+person:282  name:  "Mads Mikkelsen" .
+
+movie:208  playedBy:  person:441 , person:440 , person:439 ;
+        year:      "1976" ;
+        name:      "Rocky" ;
+        url:       <http://www.imdb.com/title/tt0075148/?ref_=chttp_tt_208> .
+
+person:457  name:  "William Friedkin (dir.)" .
+
+person:204  name:  "F. Murray Abraham" .
+
+person:250  name:  "James Garner" .
+
+person:425  name:  "Jim Sheridan (dir.)" .
+
+person:38  name:  "Martin Scorsese (dir.)" .
+
+movie:222  playedBy:  person:466 , person:64 , person:67 ;
+        year:      "1948" ;
+        name:      "Rope" ;
+        url:       <http://www.imdb.com/title/tt0040746/?ref_=chttp_tt_222> .
+
+person:471  name:  "Mahito Tsujimura" .
+
+person:84  name:  "Carrie-Anne Moss" .
+
+movie:39  playedBy:  person:91 , person:90 , person:89 ;
+        year:      "2001" ;
+        name:      "Cesta do fantazie" ;
+        url:       <http://www.imdb.com/title/tt0245429/?ref_=chttp_tt_39> .
+
+person:148  name:  "Malcolm McDowell" .
+
+movie:198  playedBy:  person:417 , person:411 , person:416 ;
+        year:      "2006" ;
+        name:      "Rang De Basanti" ;
+        url:       <http://www.imdb.com/title/tt0405508/?ref_=chttp_tt_198> .
+
+person:52  name:  "Matheus Nachtergaele" .
+
+movie:85  playedBy:  person:187 , person:186 , person:89 ;
+        year:      "1997" ;
+        name:      "Princezna Mononoke" ;
+        url:       <http://www.imdb.com/title/tt0119698/?ref_=chttp_tt_85> .
+
+person:194  name:  "Isao Takahata (dir.)" .
+
+person:369  name:  "Hilary Swank" .
+
+person:116  name:  "Kirk Douglas" .
+
+movie:2  playedBy:  person:6 , person:5 , person:4 ;
+        year:      "1972" ;
+        name:      "Kmotr" ;
+        url:       <http://www.imdb.com/title/tt0068646/?ref_=chttp_tt_2> .
+
+movie:166  playedBy:  person:353 , person:352 , person:351 ;
+        year:      "2007" ;
+        name:      "Útek do divociny" ;
+        url:       <http://www.imdb.com/title/tt0758758/?ref_=chttp_tt_166> .
+
+person:20  name:  "Steven Spielberg (dir.)" .
+
+movie:53  playedBy:  person:121 , person:45 , person:1 ;
+        year:      "1999" ;
+        name:      "Zelená míle" ;
+        url:       <http://www.imdb.com/title/tt0120689/?ref_=chttp_tt_53> .
+
+person:162  name:  "Jürgen Prochnow" .
+
+person:337  name:  "Diane Keaton" .
+
+movie:134  playedBy:  person:280 , person:279 , person:275 ;
+        year:      "1998" ;
+        name:      "Big Lebowski" ;
+        url:       <http://www.imdb.com/title/tt0118715/?ref_=chttp_tt_134> .
+
+person:383  name:  "Alejandro González Iñárritu (dir.)" .
+
+movie:21  playedBy:  person:52 , person:51 , person:50 ;
+        year:      "2002" ;
+        name:      "Mesto bohu" ;
+        url:       <http://www.imdb.com/title/tt0317248/?ref_=chttp_tt_21> .
+
+person:130  name:  "Ulrich Mühe" .
+
+person:305  name:  "Noriko Hidaka" .
+
+movie:180  playedBy:  person:379 , person:292 , person:358 ;
+        year:      "1959" ;
+        name:      "Ben-Hur" ;
+        url:       <http://www.imdb.com/title/tt0052618/?ref_=chttp_tt_180> .
+
+movie:102  playedBy:  person:223 , person:32 , person:20 ;
+        year:      "1989" ;
+        name:      "Indiana Jones a poslední krízová výprava" ;
+        url:       <http://www.imdb.com/title/tt0097576/?ref_=chttp_tt_102> .
+
+person:351  name:  "Sean Penn (dir.)" .
+
+person:249  name:  "Steve McQueen" .
+
+person:295  name:  "Véra Clouzot" .
+
+person:217  name:  "Shirley MacLaine" .
+
+person:263  name:  "Gunnar Björnstrand" .
+
+person:438  name:  "Tony Leung Chiu Wai" .
+
+person:2  name:  "Tim Robbins" .
+
+movie:235  playedBy:  person:494 , person:493 , person:20 ;
+        year:      "1993" ;
+        name:      "Jurský park" ;
+        url:       <http://www.imdb.com/title/tt0107290/?ref_=chttp_tt_235> .
+
+person:484  name:  "David Yates (dir.)" .
+
+person:231  name:  "Alan Rickman" .
+
+person:97  name:  "Roberto Benigni" .
+
+person:406  name:  "Paul Greengrass (dir.)" .
+
+person:19  name:  "Lee J. Cobb" .
+
+movie:203  playedBy:  person:428 , person:207 , person:427 ;
+        year:      "1961" ;
+        name:      "The Hustler" ;
+        url:       <http://www.imdb.com/title/tt0054997/?ref_=chttp_tt_203> .
+
+person:452  name:  "Richard Linklater (dir.)" .
+
+person:65  name:  "Donna Reed" .
+
+movie:98  playedBy:  person:217 , person:216 , person:74 ;
+        year:      "1960" ;
+        name:      "The Apartment" ;
+        url:       <http://www.imdb.com/title/tt0053604/?ref_=chttp_tt_98> .
+
+person:129  name:  "Florian Henckel von Donnersmarck (dir.)" .
+
+person:420  name:  "Anne Bancroft" .
+
+movie:179  playedBy:  person:378 , person:377 , person:376 ;
+        year:      "1986" ;
+        name:      "Stuj pri mne" ;
+        url:       <http://www.imdb.com/title/tt0092005/?ref_=chttp_tt_179> .
+
+person:33  name:  "Milos Forman (dir.)" .
+
+movie:66  playedBy:  person:141 , person:15 , person:14 ;
+        year:      "2006" ;
+        name:      "Dokonalý trik" ;
+        url:       <http://www.imdb.com/title/tt0482571/?ref_=chttp_tt_66> .
+
+person:175  name:  "John Huston (dir.)" .
+
+movie:147  playedBy:  person:307 , person:284 , person:306 ;
+        year:      "1939" ;
+        name:      "Gone with the Wind" ;
+        url:       <http://www.imdb.com/title/tt0031381/?ref_=chttp_tt_147> .
+
+person:396  name:  "John Gielgud" .
+
+movie:34  playedBy:  person:81 , person:80 , person:79 ;
+        year:      "1931" ;
+        name:      "City Lights" ;
+        url:       <http://www.imdb.com/title/tt0021749/?ref_=chttp_tt_34> .
+
+person:143  name:  "Audrey Tautou" .
+
+person:318  name:  "Charlie Sheen" .
+
+movie:193  playedBy:  person:407 , person:82 , person:406 ;
+        year:      "2007" ;
+        name:      "Bourneovo ultimátum" ;
+        url:       <http://www.imdb.com/title/tt0440963/?ref_=chttp_tt_193> .
+
+movie:80  playedBy:  person:176 , person:61 , person:175 ;
+        year:      "1948" ;
+        name:      "The Treasure of the Sierra Madre" ;
+        url:       <http://www.imdb.com/title/tt0040897/?ref_=chttp_tt_80> .
+
+movie:115  playedBy:  person:241 , person:5 , person:240 ;
+        year:      "1954" ;
+        name:      "On the Waterfront" ;
+        url:       <http://www.imdb.com/title/tt0047296/?ref_=chttp_tt_115> .
+
+person:364  name:  "Joss Whedon (dir.)" .
+
+person:111  name:  "François Cluzet" .
+
+movie:161  playedBy:  person:341 , person:340 , person:306 ;
+        year:      "1939" ;
+        name:      "The Wizard of Oz" ;
+        url:       <http://www.imdb.com/title/tt0032138/?ref_=chttp_tt_161> .
+
+person:332  name:  "James McTeigue (dir.)" .
+
+person:507  name:  "Richard Gere" .
+
+person:300  name:  "Burt Lancaster" .
+
+person:521  name:  "Lou Romano" .
+
+person:276  name:  "William H. Macy" .
+
+movie:248  playedBy:  person:518 , person:419 , person:517 ;
+        year:      "1988" ;
+        name:      "Rain Man" ;
+        url:       <http://www.imdb.com/title/tt0095953/?ref_=chttp_tt_248> .
+
+person:497  name:  "Emily Mortimer" .
+
+person:244  name:  "Ariadna Gil" .
+
+person:419  name:  "Dustin Hoffman" .
+
+person:290  name:  "Jason Flemyng" .
+
+movie:216  playedBy:  person:456 , person:64 , person:455 ;
+        year:      "1959" ;
+        name:      "Anatomy of a Murder" ;
+        url:       <http://www.imdb.com/title/tt0052561/?ref_=chttp_tt_216> .
+
+person:465  name:  "Laurence Harvey" .
+
+person:78  name:  "Edward Furlong" .
+
+person:212  name:  "Tony Curtis" .
+
+person:433  name:  "Giulietta Masina" .
+
+person:46  name:  "Robin Wright" .
+
+movie:79  playedBy:  person:174 , person:173 , person:172 ;
+        year:      "2003" ;
+        name:      "Old Boy" ;
+        url:       <http://www.imdb.com/title/tt0364569/?ref_=chttp_tt_79> .
+
+person:188  name:  "Stanley Donen (dir.)" .
+
+movie:230  playedBy:  person:483 , person:482 , person:481 ;
+        year:      "2007" ;
+        name:      "Skafandr a motýl" ;
+        url:       <http://www.imdb.com/title/tt0401383/?ref_=chttp_tt_230> .
+
+person:92  name:  "Stanley Kubrick (dir.)" .
+
+person:401  name:  "Andie MacDowell" .
+
+person:14  name:  "Christopher Nolan (dir.)" .
+
+movie:47  playedBy:  person:82 , person:36 , person:38 ;
+        year:      "2006" ;
+        name:      "Skrytá identita" ;
+        url:       <http://www.imdb.com/title/tt0407887/?ref_=chttp_tt_47> .
+
+person:156  name:  "Robert Mulligan (dir.)" .
+
+person:60  name:  "Michael Curtiz (dir.)" .
+
+movie:93  playedBy:  person:205 , person:204 , person:33 ;
+        year:      "1984" ;
+        name:      "Amadeus" ;
+        url:       <http://www.imdb.com/title/tt0086879/?ref_=chttp_tt_93> .
+
+movie:128  playedBy:  person:270 , person:269 , person:40 ;
+        year:      "1985" ;
+        name:      "Ran" ;
+        url:       <http://www.imdb.com/title/tt0089881/?ref_=chttp_tt_128> .
+
+person:377  name:  "Wil Wheaton" .
+
+movie:15  playedBy:  person:39 , person:7 , person:38 ;
+        year:      "1990" ;
+        name:      "Goodfellas" ;
+        url:       <http://www.imdb.com/title/tt0099685/?ref_=chttp_tt_15> .
+
+person:124  name:  "Tom Hardy" .
+
+movie:174  playedBy:  person:62 , person:107 , person:67 ;
+        year:      "1946" ;
+        name:      "Notorious" ;
+        url:       <http://www.imdb.com/title/tt0038787/?ref_=chttp_tt_174> .
+
+movie:61  playedBy:  person:136 , person:135 , person:134 ;
+        year:      "2008" ;
+        name:      "Vall-I" ;
+        url:       <http://www.imdb.com/title/tt0910970/?ref_=chttp_tt_61> .
+
+person:170  name:  "James Woods" .
+
+person:345  name:  "Roy Scheider" .
+
+movie:142  playedBy:  person:82 , person:297 , person:296 ;
+        year:      "1997" ;
+        name:      "Dobrý Will Hunting" ;
+        url:       <http://www.imdb.com/title/tt0119217/?ref_=chttp_tt_142> .
+
+person:391  name:  "Richard Kelly (dir.)" .
+
+person:313  name:  "Javier Bardem" .
+
+movie:110  playedBy:  person:235 , person:12 , person:11 ;
+        year:      "1965" ;
+        name:      "Per qualche dollaro in più" ;
+        url:       <http://www.imdb.com/title/tt0059578/?ref_=chttp_tt_110> .
+
+person:289  name:  "Christopher Walken" .
+
+person:502  name:  "Maggie Cheung" .
+
+person:257  name:  "Buster Keaton" .
+
+movie:229  playedBy:  person:480 , person:479 , person:478 ;
+        year:      "1979" ;
+        name:      "Stalker" ;
+        url:       <http://www.imdb.com/title/tt0079944/?ref_=chttp_tt_229> .
+
+person:478  name:  "Andrei Tarkovsky (dir.)" .
+
+person:225  name:  "Eijirô Tôno" .
+
+person:271  name:  "Laurence Olivier" .
+
+person:446  name:  "Mélissa Désormeaux-Poulin" .
+
+person:59  name:  "Gabriel Byrne" .
+
+movie:243  playedBy:  person:508 , person:507 , person:506 ;
+        year:      "2009" ;
+        name:      "Hachi: A Dog's Tale" ;
+        url:       <http://www.imdb.com/title/tt1028532/?ref_=chttp_tt_243> .
+
+person:492  name:  "Ernest Borgnine" .
+
+movie:9  playedBy:  person:25 , person:24 , person:23 ;
+        year:      "2003" ;
+        name:      "Pán prstenu: Návrat krále" ;
+        url:       <http://www.imdb.com/title/tt0167260/?ref_=chttp_tt_9> .
+
+person:414  name:  "Aamir Khan (dir.)" .
+
+person:27  name:  "Brad Pitt" .
+
+person:169  name:  "Jared Leto" .
+
+movie:211  playedBy:  person:446 , person:445 , person:444 ;
+        year:      "2010" ;
+        name:      "Incendies" ;
+        url:       <http://www.imdb.com/title/tt1255953/?ref_=chttp_tt_211> .
+
+person:460  name:  "Kang-ho Song" .
+
+person:73  name:  "Janet Leigh" .
+
+movie:28  playedBy:  person:66 , person:32 , person:20 ;
+        year:      "1981" ;
+        name:      "Dobyvatelé ztracené archy" ;
+        url:       <http://www.imdb.com/title/tt0082971/?ref_=chttp_tt_28> .
+
+person:137  name:  "Fred MacMurray" .
+
+movie:187  playedBy:  person:393 , person:392 , person:391 ;
+        year:      "2001" ;
+        name:      "Donnie Darko" ;
+        url:       <http://www.imdb.com/title/tt0246578/?ref_=chttp_tt_187> .
+
+person:41  name:  "Toshirô Mifune" .
+
+movie:74  playedBy:  person:163 , person:162 , person:161 ;
+        year:      "1981" ;
+        name:      "Ponorka" ;
+        url:       <http://www.imdb.com/title/tt0082096/?ref_=chttp_tt_74> .
+
+person:183  name:  "Matthew Modine" .
+
+movie:109  playedBy:  person:155 , person:75 , person:153 ;
+        year:      "1957" ;
+        name:      "Most pres reku Kwai" ;
+        url:       <http://www.imdb.com/title/tt0050212/?ref_=chttp_tt_109> .
+
+person:358  name:  "William Wyler (dir.)" .
+
+person:105  name:  "Michael J. Fox" .
+
+movie:155  playedBy:  person:325 , person:124 , person:324 ;
+        year:      "2011" ;
+        name:      "Warrior" ;
+        url:       <http://www.imdb.com/title/tt1291584/?ref_=chttp_tt_155> .
+
+movie:42  playedBy:  person:98 , person:97 , person:96 ;
+        year:      "1997" ;
+        name:      "Zivot je krásný" ;
+        url:       <http://www.imdb.com/title/tt0118799/?ref_=chttp_tt_42> .
+
+person:151  name:  "Philippe Noiret" .
+
+person:326  name:  "Terry George (dir.)" .
+
+movie:123  playedBy:  person:260 , person:6 , person:259 ;
+        year:      "1983" ;
+        name:      "Scarface" ;
+        url:       <http://www.imdb.com/title/tt0086250/?ref_=chttp_tt_123> .
+
+person:372  name:  "Paul Dano" .
+
+movie:10  playedBy:  person:28 , person:27 , person:26 ;
+        year:      "1999" ;
+        name:      "Klub rvácu" ;
+        url:       <http://www.imdb.com/title/tt0137523/?ref_=chttp_tt_10> .
+
+person:340  name:  "Judy Garland" .
+
+person:515  name:  "Peter Billingsley" .
+
+person:9  name:  "John Travolta" .
+
+person:238  name:  "John Lasseter (dir.)" .
+
+person:284  name:  "Clark Gable" .
+
+person:459  name:  "Joon-ho Bong (dir.)" .
+
+person:206  name:  "George Roy Hill (dir.)" .
+
+person:252  name:  "Edward Asner" .
+
+person:427  name:  "Robert Rossen (dir.)" .
+
+movie:224  playedBy:  person:389 , person:181 , person:469 ;
+        year:      "1998" ;
+        name:      "Truman Show" ;
+        url:       <http://www.imdb.com/title/tt0120382/?ref_=chttp_tt_224> .
+
+person:473  name:  "Suraj Sharma" .
+
+person:220  name:  "Gary Lockwood" .
+
+person:86  name:  "Arnold Schwarzenegger" .
+
+person:441  name:  "Talia Shire" .
+
+person:54  name:  "Jonathan Demme (dir.)" .
+
+movie:87  playedBy:  person:193 , person:192 , person:191 ;
+        year:      "1948" ;
+        name:      "Ladri di biciclette" ;
+        url:       <http://www.imdb.com/title/tt0040522/?ref_=chttp_tt_87> .
+
+person:196  name:  "Ayano Shiraishi" .
+
+person:118  name:  "Fritz Lang (dir.)" .
+
+movie:4  playedBy:  person:10 , person:9 , person:8 ;
+        year:      "1994" ;
+        name:      "Pulp Fiction" ;
+        url:       <http://www.imdb.com/title/tt0110912/?ref_=chttp_tt_4> .
+
+movie:168  playedBy:  person:357 , person:356 , person:355 ;
+        year:      "2010" ;
+        name:      "Jak vycvicit draka" ;
+        url:       <http://www.imdb.com/title/tt0892769/?ref_=chttp_tt_168> .
+
+person:22  name:  "Ralph Fiennes" .
+
+movie:55  playedBy:  person:124 , person:15 , person:14 ;
+        year:      "2012" ;
+        name:      "Temný rytír povstal" ;
+        url:       <http://www.imdb.com/title/tt1345836/?ref_=chttp_tt_55> .
+
+person:164  name:  "Roger Allers (dir.)" .
+
+person:339  name:  "Jane Darwell" .
+
+movie:136  playedBy:  person:285 , person:284 , person:63 ;
+        year:      "1934" ;
+        name:      "It Happened One Night" ;
+        url:       <http://www.imdb.com/title/tt0025316/?ref_=chttp_tt_136> .
+
+person:385  name:  "Gael García Bernal" .
+
+movie:23  playedBy:  person:53 , person:18 , person:11 ;
+        year:      "1968" ;
+        name:      "C'era una volta il West" ;
+        url:       <http://www.imdb.com/title/tt0064116/?ref_=chttp_tt_23> .
+
+person:132  name:  "Kim Novak" .
+
+person:307  name:  "Vivien Leigh" .
+
+movie:182  playedBy:  person:385 , person:384 , person:383 ;
+        year:      "2000" ;
+        name:      "Amores perros - Láska je kurva" ;
+        url:       <http://www.imdb.com/title/tt0245712/?ref_=chttp_tt_182> .
+
+movie:104  playedBy:  person:225 , person:41 , person:40 ;
+        year:      "1961" ;
+        name:      "Yôjinbô" ;
+        url:       <http://www.imdb.com/title/tt0055630/?ref_=chttp_tt_104> .
+
+person:353  name:  "Vince Vaughn" .
+
+person:100  name:  "Sigourney Weaver" .
+
+movie:150  playedBy:  person:313 , person:312 , person:311 ;
+        year:      "2007" ;
+        name:      "Tahle zeme není pro starý" ;
+        url:       <http://www.imdb.com/title/tt0477348/?ref_=chttp_tt_150> .
+
+person:321  name:  "Mickey Rourke" .
+
+person:297  name:  "Robin Williams" .
+
+person:219  name:  "Keir Dullea" .
+
+person:510  name:  "James Van Der Beek" .
+
+person:265  name:  "John Hurt" .
+
+person:4  name:  "Francis Ford Coppola (dir.)" .
+
+movie:237  playedBy:  person:497 , person:36 , person:38 ;
+        year:      "2010" ;
+        name:      "Prokletý ostrov" ;
+        url:       <http://www.imdb.com/title/tt1130884/?ref_=chttp_tt_237> .
+
+person:486  name:  "Emma Watson" .
+
+person:99  name:  "Ridley Scott (dir.)" .
+
+person:233  name:  "Guy Ritchie (dir.)" .
+
+person:408  name:  "Cary Elwes" .
+
+movie:205  playedBy:  person:433 , person:432 , person:431 ;
+        year:      "1954" ;
+        name:      "La Strada" ;
+        url:       <http://www.imdb.com/title/tt0047528/?ref_=chttp_tt_205> .
+
+person:454  name:  "Julie Delpy" .
+
+person:201  name:  "Bette Davis" .
+
+person:67  name:  "Alfred Hitchcock (dir.)" .
+
+person:422  name:  "Pernilla Allwin" .
+
+person:35  name:  "Louise Fletcher" .
+
+movie:68  playedBy:  person:147 , person:146 , person:145 ;
+        year:      "2013" ;
+        name:      "Gravitace" ;
+        url:       <http://www.imdb.com/title/tt1454468/?ref_=chttp_tt_68> .
+
+person:177  name:  "Mel Gibson (dir.)" .
+
+person:81  name:  "Virginia Cherrill" .
+
+movie:149  playedBy:  person:310 , person:309 , person:308 ;
+        year:      "1996" ;
+        name:      "Trainspotting" ;
+        url:       <http://www.imdb.com/title/tt0117951/?ref_=chttp_tt_149> .
+
+person:398  name:  "Lauren Bacall" .
+
+movie:36  playedBy:  person:84 , person:83 , person:14 ;
+        year:      "2000" ;
+        name:      "Memento" ;
+        url:       <http://www.imdb.com/title/tt0209144/?ref_=chttp_tt_36> .
+
+person:145  name:  "Alfonso Cuarón (dir.)" .
+
+movie:195  playedBy:  person:412 , person:411 , person:410 ;
+        year:      "2009" ;
+        name:      "3 Idiots" ;
+        url:       <http://www.imdb.com/title/tt1187043/?ref_=chttp_tt_195> .
+
+movie:82  playedBy:  person:182 , person:181 , person:180 ;
+        year:      "2004" ;
+        name:      "Vecný svit neposkvrnené mysli" ;
+        url:       <http://www.imdb.com/title/tt0338013/?ref_=chttp_tt_82> .
+
+person:191  name:  "Vittorio De Sica (dir.)" .
+
+movie:117  playedBy:  person:247 , person:246 , person:245 ;
+        year:      "2004" ;
+        name:      "Pád Tretí ríse" ;
+        url:       <http://www.imdb.com/title/tt0363163/?ref_=chttp_tt_117> .
+
+person:366  name:  "Chris Evans" .
+
+person:113  name:  "Orson Welles (dir.)" .
+
+movie:163  playedBy:  person:346 , person:345 , person:20 ;
+        year:      "1975" ;
+        name:      "Jaws" ;
+        url:       <http://www.imdb.com/title/tt0073195/?ref_=chttp_tt_163> .
+
+movie:50  playedBy:  person:115 , person:114 , person:113 ;
+        year:      "1941" ;
+        name:      "Obcan Kane" ;
+        url:       <http://www.imdb.com/title/tt0033467/?ref_=chttp_tt_50> .
+
+person:334  name:  "Natalie Portman" .
+
+person:509  name:  "Anna Paquin" .
+
+movie:131  playedBy:  person:274 , person:12 , person:221 ;
+        year:      "2008" ;
+        name:      "Gran Torino" ;
+        url:       <http://www.imdb.com/title/tt1205489/?ref_=chttp_tt_131> .
+
+person:380  name:  "Adam Elliot (dir.)" .
+
+person:302  name:  "M. Night Shyamalan (dir.)" .
+
+person:523  name:  "Sharlto Copley" .
+
+person:278  name:  "Mack Swain" .
+
+person:499  name:  "Chris Pine" .
+
+person:246  name:  "Bruno Ganz" .
+
+person:292  name:  "Charlton Heston" .
+
+movie:218  playedBy:  person:280 , person:458 , person:251 ;
+        year:      "2001" ;
+        name:      "Príserky s.r.o." ;
+        url:       <http://www.imdb.com/title/tt0198781/?ref_=chttp_tt_218> .
+
+person:467  name:  "Gore Verbinski (dir.)" .
+
+person:214  name:  "Graham Chapman" .
+
+person:260  name:  "Michelle Pfeiffer" .
+
+person:435  name:  "Anouk Aimée" .
+
+person:48  name:  "Keanu Reeves" .
+
+movie:232  playedBy:  person:489 , person:488 , person:487 ;
+        year:      "1995" ;
+        name:      "Nenávist" ;
+        url:       <http://www.imdb.com/title/tt0113247/?ref_=chttp_tt_232> .
+
+person:481  name:  "Julian Schnabel (dir.)" .
+
+person:94  name:  "George C. Scott" .
+
+person:403  name:  "Robert Mitchum" .
+
+person:16  name:  "Heath Ledger" .
+
+movie:49  playedBy:  person:112 , person:111 , person:110 ;
+        year:      "2011" ;
+        name:      "Nedotknutelní" ;
+        url:       <http://www.imdb.com/title/tt1675434/?ref_=chttp_tt_49> .
+
+person:158  name:  "John Megna" .
+
+movie:200  playedBy:  person:422 , person:421 , person:261 ;
+        year:      "1982" ;
+        name:      "Fanny och Alexander" ;
+        url:       <http://www.imdb.com/title/tt0083922/?ref_=chttp_tt_200> .
+
+person:62  name:  "Ingrid Bergman" .
+
+movie:95  playedBy:  person:210 , person:209 , person:118 ;
+        year:      "1927" ;
+        name:      "Metropolis" ;
+        url:       <http://www.imdb.com/title/tt0017136/?ref_=chttp_tt_95> .
+
+person:379  name:  "Jack Hawkins" .
+
+movie:17  playedBy:  person:32 , person:31 , person:43 ;
+        year:      "1977" ;
+        name:      "Star Wars: Epizoda IV - Nová nadeje" ;
+        url:       <http://www.imdb.com/title/tt0076759/?ref_=chttp_tt_17> .
+
+person:126  name:  "Christoph Waltz" .
+
+person:30  name:  "Irvin Kershner (dir.)" .
+
+movie:176  playedBy:  person:12 , person:369 , person:221 ;
+        year:      "2004" ;
+        name:      "Million Dollar Baby" ;
+        url:       <http://www.imdb.com/title/tt0405159/?ref_=chttp_tt_176> .
+
+movie:63  playedBy:  person:95 , person:80 , person:79 ;
+        year:      "1940" ;
+        name:      "The Great Dictator" ;
+        url:       <http://www.imdb.com/title/tt0032553/?ref_=chttp_tt_63> .
+
+person:172  name:  "Chan-wook Park (dir.)" .
+
+person:347  name:  "Farley Granger" .
+
+movie:144  playedBy:  person:301 , person:7 , person:38 ;
+        year:      "1995" ;
+        name:      "Casino" ;
+        url:       <http://www.imdb.com/title/tt0112641/?ref_=chttp_tt_144> .
+
+person:393  name:  "Jena Malone" .
+
+movie:31  playedBy:  person:73 , person:72 , person:67 ;
+        year:      "1960" ;
+        name:      "Psycho" ;
+        url:       <http://www.imdb.com/title/tt0054215/?ref_=chttp_tt_31> .
+
+person:140  name:  "Tim Allen" .
+
+person:315  name:  "Ricardo Darín" .
+
+movie:190  playedBy:  person:401 , person:400 , person:399 ;
+        year:      "1993" ;
+        name:      "Na Hromnice o den více" ;
+        url:       <http://www.imdb.com/title/tt0107048/?ref_=chttp_tt_190> .
+
+movie:112  playedBy:  person:237 , person:64 , person:63 ;
+        year:      "1939" ;
+        name:      "Mr. Smith Goes to Washington" ;
+        url:       <http://www.imdb.com/title/tt0031679/?ref_=chttp_tt_112> .
+
+person:361  name:  "Fred Zinnemann (dir.)" .
+
+person:504  name:  "Irène Jacob" .
+
+person:259  name:  "Brian De Palma (dir.)" .
+
+person:227  name:  "Peyman Moaadi" .
+
+person:273  name:  "Mary Astor" .
+
+person:448  name:  "Ryan O'Neal" .
+
+movie:245  playedBy:  person:513 , person:512 , person:511 ;
+        year:      "1930" ;
+        name:      "All Quiet on the Western Front" ;
+        url:       <http://www.imdb.com/title/tt0020629/?ref_=chttp_tt_245> .
+
+person:494  name:  "Laura Dern" .
+
+person:241  name:  "Karl Malden" .
+
+person:416  name:  "Rakeysh Omprakash Mehra (dir.)" .
+
+person:29  name:  "Ian McKellen" .
+
+movie:213  playedBy:  person:449 , person:448 , person:92 ;
+        year:      "1975" ;
+        name:      "Barry Lyndon" ;
+        url:       <http://www.imdb.com/title/tt0072684/?ref_=chttp_tt_213> .
+
+person:462  name:  "Audrey Hepburn" .
+
+person:75  name:  "William Holden" .
+
+person:139  name:  "Lee Unkrich (dir.)" .
+
+person:430  name:  "Richard Burton" .
+
+person:43  name:  "George Lucas (dir.)" .
+
+movie:189  playedBy:  person:398 , person:61 , person:397 ;
+        year:      "1946" ;
+        name:      "The Big Sleep" ;
+        url:       <http://www.imdb.com/title/tt0038355/?ref_=chttp_tt_189> .
+
+movie:76  playedBy:  person:169 , person:168 , person:167 ;
+        year:      "2000" ;
+        name:      "Rekviem za sen" ;
+        url:       <http://www.imdb.com/title/tt0180093/?ref_=chttp_tt_76> .
+
+person:185  name:  "Carol Reed (dir.)" .
+
+person:107  name:  "Cary Grant" .
+
+movie:157  playedBy:  person:331 , person:330 , person:329 ;
+        year:      "1982" ;
+        name:      "The Thing" ;
+        url:       <http://www.imdb.com/title/tt0084787/?ref_=chttp_tt_157> .
+
+person:11  name:  "Sergio Leone (dir.)" .
+
+movie:44  playedBy:  person:104 , person:103 , person:102 ;
+        year:      "2002" ;
+        name:      "Pianista" ;
+        url:       <http://www.imdb.com/title/tt0253474/?ref_=chttp_tt_44> .
+
+person:153  name:  "David Lean (dir.)" .
+
+person:328  name:  "Sophie Okonedo" .
+
+movie:90  playedBy:  person:199 , person:198 , person:74 ;
+        year:      "1957" ;
+        name:      "Witness for the Prosecution" ;
+        url:       <http://www.imdb.com/title/tt0051201/?ref_=chttp_tt_90> .
+
+movie:125  playedBy:  person:265 , person:56 , person:264 ;
+        year:      "1980" ;
+        name:      "Sloní muz" ;
+        url:       <http://www.imdb.com/title/tt0080678/?ref_=chttp_tt_125> .
+
+person:374  name:  "Jean-Pierre Léaud" .
+
+movie:12  playedBy:  person:32 , person:31 , person:30 ;
+        year:      "1980" ;
+        name:      "Star Wars: Epizoda V - Impérium vrací úder" ;
+        url:       <http://www.imdb.com/title/tt0080684/?ref_=chttp_tt_12> .
+
+person:121  name:  "Michael Clarke Duncan" .
+
+movie:171  playedBy:  person:215 , person:214 , person:363 ;
+        year:      "1979" ;
+        name:      "Zivot Briana" ;
+        url:       <http://www.imdb.com/title/tt0079470/?ref_=chttp_tt_171> .
+
+person:342  name:  "Ron Howard (dir.)" .
+
+person:517  name:  "Barry Levinson (dir.)" .
+
+person:310  name:  "Ewen Bremner" .
+
+person:286  name:  "Stuart Rosenberg (dir.)" .
+
+person:208  name:  "Robert Redford" .
+
+person:254  name:  "Nobuo Kaneko" .
+
+person:429  name:  "Elizabeth Taylor" .
+
+movie:226  playedBy:  person:474 , person:473 , person:472 ;
+        year:      "2012" ;
+        name:      "Pi a jeho zivot" ;
+        url:       <http://www.imdb.com/title/tt0454876/?ref_=chttp_tt_226> .
+
+person:475  name:  "Wilson Yip (dir.)" .
+
+person:88  name:  "Martin Sheen" .
+
+person:222  name:  "Gene Hackman" .
+
+person:443  name:  "John Wayne" .
+
+person:56  name:  "Anthony Hopkins" .
+
+movie:89  playedBy:  person:122 , person:58 , person:197 ;
+        year:      "1997" ;
+        name:      "L.A. prísne tajné" ;
+        url:       <http://www.imdb.com/title/tt0119488/?ref_=chttp_tt_89> .
+
+person:198  name:  "Tyrone Power" .
+
+movie:240  playedBy:  person:454 , person:453 , person:452 ;
+        year:      "1995" ;
+        name:      "Pred úsvitem" ;
+        url:       <http://www.imdb.com/title/tt0112471/?ref_=chttp_tt_240> .
+
+movie:6  playedBy:  person:16 , person:15 , person:14 ;
+        year:      "2008" ;
+        name:      "Temný rytír" ;
+        url:       <http://www.imdb.com/title/tt0468569/?ref_=chttp_tt_6> .
+
+person:411  name:  "Aamir Khan" .
+
+person:24  name:  "Elijah Wood" .
+
+movie:57  playedBy:  person:128 , person:58 , person:127 ;
+        year:      "1999" ;
+        name:      "Americká krása" ;
+        url:       <http://www.imdb.com/title/tt0169547/?ref_=chttp_tt_57> .
+
+person:166  name:  "Jeremy Irons" .
+
+person:70  name:  "Jean Reno" .
+
+movie:138  playedBy:  person:289 , person:7 , person:288 ;
+        year:      "1978" ;
+        name:      "The Deer Hunter" ;
+        url:       <http://www.imdb.com/title/tt0077416/?ref_=chttp_tt_138> .
+
+person:387  name:  "Colin Firth" .
+
+movie:25  playedBy:  person:59 , person:58 , person:57 ;
+        year:      "1995" ;
+        name:      "Obvyklí podezrelí" ;
+        url:       <http://www.imdb.com/title/tt0114814/?ref_=chttp_tt_25> .
+
+person:134  name:  "Andrew Stanton (dir.)" .
+
+person:309  name:  "Ewan McGregor" .
+
+movie:184  playedBy:  person:388 , person:387 , person:386 ;
+        year:      "2010" ;
+        name:      "Králova rec" ;
+        url:       <http://www.imdb.com/title/tt1504320/?ref_=chttp_tt_184> .
+
+movie:71  playedBy:  person:155 , person:154 , person:153 ;
+        year:      "1962" ;
+        name:      "Lawrence of Arabia" ;
+        url:       <http://www.imdb.com/title/tt0056172/?ref_=chttp_tt_71> .
+
+person:180  name:  "Michel Gondry (dir.)" .
+
+movie:106  playedBy:  person:231 , person:230 , person:229 ;
+        year:      "1988" ;
+        name:      "Smrtonosná past" ;
+        url:       <http://www.imdb.com/title/tt0095016/?ref_=chttp_tt_106> .
+
+person:355  name:  "Dean DeBlois (dir.)" .
+
+person:102  name:  "Roman Polanski (dir.)" .
+
+movie:152  playedBy:  person:319 , person:318 , person:317 ;
+        year:      "1986" ;
+        name:      "Platoon" ;
+        url:       <http://www.imdb.com/title/tt0091763/?ref_=chttp_tt_152> .
+
+person:323  name:  "David Carradine" .
+
+movie:120  playedBy:  person:254 , person:42 , person:40 ;
+        year:      "1952" ;
+        name:      "Ikiru" ;
+        url:       <http://www.imdb.com/title/tt0044741/?ref_=chttp_tt_120> .
+
+person:299  name:  "Spencer Tracy" .
+
+person:512  name:  "Lew Ayres" .
+
+person:267  name:  "Bibi Andersson" .
+
+person:6  name:  "Al Pacino" .
+
+movie:239  playedBy:  person:500 , person:499 , person:498 ;
+        year:      "2009" ;
+        name:      "Star Trek" ;
+        url:       <http://www.imdb.com/title/tt0796366/?ref_=chttp_tt_239> .
+
+person:488  name:  "Vincent Cassel" .
+
+person:235  name:  "Lee Van Cleef" .
+
+person:281  name:  "Thomas Vinterberg (dir.)" .
+
+movie:207  playedBy:  person:438 , person:437 , person:436 ;
+        year:      "2002" ;
+        name:      "Volavka" ;
+        url:       <http://www.imdb.com/title/tt0338564/?ref_=chttp_tt_207> .
+
+person:456  name:  "Lee Remick" .
+
+person:69  name:  "Luc Besson (dir.)" .
+
+person:203  name:  "Machiko Kyô" .
+
+person:424  name:  "Coleen Gray" .
+
+person:37  name:  "Joseph Gordon-Levitt" .
+
+person:179  name:  "Sophie Marceau" .
+
+movie:221  playedBy:  person:465 , person:464 , person:463 ;
+        year:      "1962" ;
+        name:      "Mandzuský kandidát" ;
+        url:       <http://www.imdb.com/title/tt0056218/?ref_=chttp_tt_221> .
+
+person:470  name:  "Sumi Shimamoto" .
+
+person:83  name:  "Guy Pearce" .
+
+movie:38  playedBy:  person:5 , person:88 , person:4 ;
+        year:      "1979" ;
+        name:      "Apocalypse Now" ;
+        url:       <http://www.imdb.com/title/tt0078788/?ref_=chttp_tt_38> .
+
+person:147  name:  "George Clooney" .
+
+movie:197  playedBy:  person:411 , person:415 , person:414 ;
+        year:      "2007" ;
+        name:      "Taare Zameen Par" ;
+        url:       <http://www.imdb.com/title/tt0986264/?ref_=chttp_tt_197> .
+
+person:51  name:  "Alexandre Rodrigues" .
+
+movie:84  playedBy:  person:115 , person:114 , person:185 ;
+        year:      "1949" ;
+        name:      "The Third Man" ;
+        url:       <http://www.imdb.com/title/tt0041959/?ref_=chttp_tt_84> .
+
+person:193  name:  "Enzo Staiola" .
+
+movie:119  playedBy:  person:253 , person:252 , person:251 ;
+        year:      "2009" ;
+        name:      "Vzhuru do oblak" ;
+        url:       <http://www.imdb.com/title/tt1049413/?ref_=chttp_tt_119> .
+
+person:368  name:  "Takuya Kimura" .
+
+person:115  name:  "Joseph Cotten" .
+
+movie:1  playedBy:  person:3 , person:2 , person:1 ;
+        year:      "1994" ;
+        name:      "Vykoupení z veznice Shawshank" ;
+        url:       <http://www.imdb.com/title/tt0111161/?ref_=chttp_tt_1> .
+
+movie:165  playedBy:  person:350 , person:349 , person:134 ;
+        year:      "2003" ;
+        name:      "Hledá se Nemo" ;
+        url:       <http://www.imdb.com/title/tt0266543/?ref_=chttp_tt_165> .
+
+movie:52  playedBy:  person:120 , person:119 , person:118 ;
+        year:      "1931" ;
+        name:      "M" ;
+        url:       <http://www.imdb.com/title/tt0022100/?ref_=chttp_tt_52> .
+
+person:161  name:  "Wolfgang Petersen (dir.)" .
+
+person:336  name:  "Woody Allen" .
+
+movie:133  playedBy:  person:278 , person:80 , person:79 ;
+        year:      "1925" ;
+        name:      "The Gold Rush" ;
+        url:       <http://www.imdb.com/title/tt0015864/?ref_=chttp_tt_133> .
+
+person:382  name:  "Philip Seymour Hoffman" .
+
+movie:20  playedBy:  person:29 , person:24 , person:23 ;
+        year:      "2002" ;
+        name:      "Pán prstenu: Dve veze" ;
+        url:       <http://www.imdb.com/title/tt0167261/?ref_=chttp_tt_20> .
+
+person:304  name:  "Hitoshi Takagi" .
+
+movie:101  playedBy:  person:222 , person:12 , person:221 ;
+        year:      "1992" ;
+        name:      "Nesmiritelní" ;
+        url:       <http://www.imdb.com/title/tt0105695/?ref_=chttp_tt_101> .
+
+person:350  name:  "Ellen DeGeneres" .
+
+person:248  name:  "John Sturges (dir.)" .
+
+person:294  name:  "Simone Signoret" .
+
+person:469  name:  "Peter Weir (dir.)" .
+
+person:216  name:  "Jack Lemmon" .
+
+person:262  name:  "Max von Sydow" .
+
+person:437  name:  "Andy Lau" .
+
+person:1  name:  "Frank Darabont (dir.)" .
+
+movie:234  playedBy:  person:492 , person:75 , person:491 ;
+        year:      "1969" ;
+        name:      "The Wild Bunch" ;
+        url:       <http://www.imdb.com/title/tt0065214/?ref_=chttp_tt_234> .
+
+person:483  name:  "Emmanuelle Seigner" .
+
+person:96  name:  "Roberto Benigni (dir.)" .
+
+person:230  name:  "Bruce Willis" .
+
+person:405  name:  "Liv Ullmann" .
+
+person:18  name:  "Henry Fonda" .
+
+movie:202  playedBy:  person:426 , person:371 , person:425 ;
+        year:      "1993" ;
+        name:      "Ve jménu otce" ;
+        url:       <http://www.imdb.com/title/tt0107207/?ref_=chttp_tt_202> .
+
+person:451  name:  "Freida Pinto" .
+
+person:64  name:  "James Stewart" .
+
+movie:97  playedBy:  person:215 , person:214 , person:213 ;
+        year:      "1975" ;
+        name:      "Monty Python a svatý grál" ;
+        url:       <http://www.imdb.com/title/tt0071853/?ref_=chttp_tt_97> .
+
+movie:19  playedBy:  person:49 , person:48 , person:47 ;
+        year:      "1999" ;
+        name:      "Matrix" ;
+        url:       <http://www.imdb.com/title/tt0133093/?ref_=chttp_tt_19> .
+
+person:128  name:  "Annette Bening" .
+
+movie:178  playedBy:  person:375 , person:374 , person:373 ;
+        year:      "1959" ;
+        name:      "Les quatre cents coups" ;
+        url:       <http://www.imdb.com/title/tt0053198/?ref_=chttp_tt_178> .
+
+person:32  name:  "Harrison Ford" .
+
+movie:65  playedBy:  person:140 , person:45 , person:139 ;
+        year:      "2010" ;
+        name:      "Toy Story 3: Príbeh hracek" ;
+        url:       <http://www.imdb.com/title/tt0435761/?ref_=chttp_tt_65> .
+
+person:174  name:  "Ji-tae Yu" .
+
+person:349  name:  "Albert Brooks" .
+
+movie:146  playedBy:  person:305 , person:304 , person:89 ;
+        year:      "1988" ;
+        name:      "Tonari no Totoro" ;
+        url:       <http://www.imdb.com/title/tt0096283/?ref_=chttp_tt_146> .
+
+person:395  name:  "Ben Kingsley" .
+
+movie:33  playedBy:  person:78 , person:28 , person:77 ;
+        year:      "1998" ;
+        name:      "Kult hákového kríze" ;
+        url:       <http://www.imdb.com/title/tt0120586/?ref_=chttp_tt_33> .
+
+person:142  name:  "Jean-Pierre Jeunet (dir.)" .
+
+person:317  name:  "Oliver Stone (dir.)" .
+
+movie:192  playedBy:  person:405 , person:267 , person:261 ;
+        year:      "1966" ;
+        name:      "Persona" ;
+        url:       <http://www.imdb.com/title/tt0060827/?ref_=chttp_tt_192> .
+
+movie:114  playedBy:  person:239 , person:80 , person:79 ;
+        year:      "1921" ;
+        name:      "The Kid" ;
+        url:       <http://www.imdb.com/title/tt0012349/?ref_=chttp_tt_114> .
+
+person:363  name:  "Terry Jones (dir.)" .
+
+person:110  name:  "Olivier Nakache (dir.)" .
+
+movie:160  playedBy:  person:339 , person:18 , person:338 ;
+        year:      "1940" ;
+        name:      "The Grapes of Wrath" ;
+        url:       <http://www.imdb.com/title/tt0032551/?ref_=chttp_tt_160> .
+
+person:331  name:  "Wilford Brimley" .
+
+person:506  name:  "Lasse Hallström (dir.)" .
+
+person:229  name:  "John McTiernan (dir.)" .
+
+person:520  name:  "Brad Garrett" .
+
+person:275  name:  "Joel Coen (dir.)" .
+
+movie:247  playedBy:  person:516 , person:515 , person:514 ;
+        year:      "1983" ;
+        name:      "A Christmas Story" ;
+        url:       <http://www.imdb.com/title/tt0085334/?ref_=chttp_tt_247> .
+
+person:496  name:  "Henning Moritzen" .
+
+person:243  name:  "Ivana Baquero" .
+
+person:418  name:  "Mike Nichols (dir.)" .
+
+movie:215  playedBy:  person:454 , person:453 , person:452 ;
+        year:      "2013" ;
+        name:      "Pred pulnocí" ;
+        url:       <http://www.imdb.com/title/tt2209418/?ref_=chttp_tt_215> .
+
+person:464  name:  "Frank Sinatra" .
+
+person:77  name:  "Tony Kaye (dir.)" .
+
+person:211  name:  "Marilyn Monroe" .
+
+person:432  name:  "Anthony Quinn" .
+
+person:45  name:  "Tom Hanks" .
+
+movie:78  playedBy:  person:32 , person:31 , person:171 ;
+        year:      "1983" ;
+        name:      "Star Wars: Epizoda VI - Návrat Jediho" ;
+        url:       <http://www.imdb.com/title/tt0086190/?ref_=chttp_tt_78> .
+
+person:187  name:  "Yuriko Ishida" .
+
+person:91  name:  "Suzanne Pleshette" .
+
+person:109  name:  "Shelley Duvall" .
+
+person:400  name:  "Bill Murray" .
+
+person:13  name:  "Eli Wallach" .
+
+movie:159  playedBy:  person:337 , person:336 , person:335 ;
+        year:      "1977" ;
+        name:      "Annie Hallová" ;
+        url:       <http://www.imdb.com/title/tt0075686/?ref_=chttp_tt_159> .
+
+movie:46  playedBy:  person:108 , person:107 , person:67 ;
+        year:      "1959" ;
+        name:      "North by Northwest" ;
+        url:       <http://www.imdb.com/title/tt0053125/?ref_=chttp_tt_46> .
+
+person:155  name:  "Alec Guinness" .
+
+movie:92  playedBy:  person:203 , person:41 , person:40 ;
+        year:      "1950" ;
+        name:      "Rashômon" ;
+        url:       <http://www.imdb.com/title/tt0042876/?ref_=chttp_tt_92> .
+
+movie:127  playedBy:  person:268 , person:32 , person:99 ;
+        year:      "1982" ;
+        name:      "Blade Runner" ;
+        url:       <http://www.imdb.com/title/tt0083658/?ref_=chttp_tt_127> .
+
+person:376  name:  "Rob Reiner (dir.)" .
+
+movie:14  playedBy:  person:37 , person:36 , person:14 ;
+        year:      "2010" ;
+        name:      "Pocátek" ;
+        url:       <http://www.imdb.com/title/tt1375666/?ref_=chttp_tt_14> .
+
+person:123  name:  "Joaquin Phoenix" .
+
+movie:173  playedBy:  person:366 , person:365 , person:364 ;
+        year:      "2012" ;
+        name:      "Avengers" ;
+        url:       <http://www.imdb.com/title/tt0848228/?ref_=chttp_tt_173> .
+
+movie:60  playedBy:  person:133 , person:100 , person:85 ;
+        year:      "1986" ;
+        name:      "Vetrelci" ;
+        url:       <http://www.imdb.com/title/tt0090605/?ref_=chttp_tt_60> .
+
+person:344  name:  "Chris Hemsworth" .
+
+person:519  name:  "Brad Bird (dir.)" .
+
+movie:141  playedBy:  person:295 , person:294 , person:293 ;
+        year:      "1955" ;
+        name:      "Les diaboliques" ;
+        url:       <http://www.imdb.com/title/tt0046911/?ref_=chttp_tt_141> .
+
+person:390  name:  "Madeleine Stowe" .
+
+person:312  name:  "Tommy Lee Jones" .
+
+person:288  name:  "Michael Cimino (dir.)" .
+
+person:501  name:  "Kar Wai Wong (dir.)" .
+
+person:256  name:  "Clyde Bruckman (dir.)" .
+
+movie:228  playedBy:  person:477 , person:476 , person:475 ;
+        year:      "2008" ;
+        name:      "Ip Man" ;
+        url:       <http://www.imdb.com/title/tt1220719/?ref_=chttp_tt_228> .
+
+person:477  name:  "Simon Yam" .
+
+person:224  name:  "Cathy Moriarty" .
+
+person:270  name:  "Akira Terao" .
+
+person:445  name:  "Lubna Azabal" .
+
+person:58  name:  "Kevin Spacey" .
+
+movie:242  playedBy:  person:505 , person:504 , person:503 ;
+        year:      "1994" ;
+        name:      "Tri barvy: Cervená" ;
+        url:       <http://www.imdb.com/title/tt0111495/?ref_=chttp_tt_242> .
+
+person:491  name:  "Sam Peckinpah (dir.)" .
+
+movie:8  playedBy:  person:22 , person:21 , person:20 ;
+        year:      "1993" ;
+        name:      "Schindleruv seznam" ;
+        url:       <http://www.imdb.com/title/tt0108052/?ref_=chttp_tt_8> .
+
+person:413  name:  "John Cazale" .
+
+person:26  name:  "David Fincher (dir.)" .
+
+movie:59  playedBy:  person:132 , person:64 , person:67 ;
+        year:      "1958" ;
+        name:      "Vertigo" ;
+        url:       <http://www.imdb.com/title/tt0052357/?ref_=chttp_tt_59> .
+
+person:168  name:  "Ellen Burstyn" .
+
+movie:210  playedBy:  person:443 , person:64 , person:338 ;
+        year:      "1962" ;
+        name:      "The Man Who Shot Liberty Valance" ;
+        url:       <http://www.imdb.com/title/tt0056217/?ref_=chttp_tt_210> .
+
+person:72  name:  "Anthony Perkins" .
+
+person:389  name:  "Ed Harris" .
+
+movie:27  playedBy:  person:65 , person:64 , person:63 ;
+        year:      "1946" ;
+        name:      "It's a Wonderful Life" ;
+        url:       <http://www.imdb.com/title/tt0038650/?ref_=chttp_tt_27> .
+
+person:136  name:  "Elissa Knight" .
+
+movie:186  playedBy:  person:390 , person:230 , person:213 ;
+        year:      "1995" ;
+        name:      "12 opic" ;
+        url:       <http://www.imdb.com/title/tt0114746/?ref_=chttp_tt_186> .
+
+person:40  name:  "Akira Kurosawa (dir.)" .
+
+movie:73  playedBy:  person:160 , person:159 , person:8 ;
+        year:      "1992" ;
+        name:      "Reservoir Dogs" ;
+        url:       <http://www.imdb.com/title/tt0105236/?ref_=chttp_tt_73> .
+
+person:182  name:  "Kate Winslet" .
+
+movie:108  playedBy:  person:27 , person:234 , person:233 ;
+        year:      "2000" ;
+        name:      "Podfu(c)k" ;
+        url:       <http://www.imdb.com/title/tt0208092/?ref_=chttp_tt_108> .
+
+person:357  name:  "Gerard Butler" .
+
+person:104  name:  "Thomas Kretschmann" .
+
+movie:154  playedBy:  person:323 , person:10 , person:8 ;
+        year:      "2003" ;
+        name:      "Kill Bill" ;
+        url:       <http://www.imdb.com/title/tt0266697/?ref_=chttp_tt_154> .
+
+movie:41  playedBy:  person:95 , person:80 , person:79 ;
+        year:      "1936" ;
+        name:      "Modern Times" ;
+        url:       <http://www.imdb.com/title/tt0027977/?ref_=chttp_tt_41> .
+
+person:150  name:  "Giuseppe Tornatore (dir.)" .
+
+person:325  name:  "Nick Nolte" .
+
+movie:122  playedBy:  person:258 , person:257 , person:256 ;
+        year:      "1926" ;
+        name:      "The General" ;
+        url:       <http://www.imdb.com/title/tt0017925/?ref_=chttp_tt_122> .
+
+person:371  name:  "Daniel Day-Lewis" .
+
+person:514  name:  "Bob Clark (dir.)" .
+
+person:269  name:  "Tatsuya Nakadai" .
+
+person:8  name:  "Quentin Tarantino (dir.)" .
+
+person:237  name:  "Jean Arthur" .
+
+person:283  name:  "Thomas Bo Larsen" .
+
+movie:209  playedBy:  person:442 , person:334 , person:167 ;
+        year:      "2010" ;
+        name:      "Cerná labut" ;
+        url:       <http://www.imdb.com/title/tt0947798/?ref_=chttp_tt_209> .
+
+person:458  name:  "Billy Crystal" .
+
+person:205  name:  "Tom Hulce" .
+
+person:251  name:  "Pete Docter (dir.)" .
+
+person:426  name:  "Pete Postlethwaite" .
+
+person:39  name:  "Ray Liotta" .
+
+movie:223  playedBy:  person:388 , person:468 , person:467 ;
+        year:      "2003" ;
+        name:      "Piráti z Karibiku - Prokletí Cerné perly" ;
+        url:       <http://www.imdb.com/title/tt0325980/?ref_=chttp_tt_223> .
+
+person:472  name:  "Ang Lee (dir.)" .
+
+person:85  name:  "James Cameron (dir.)" .
+
+person:149  name:  "Patrick Magee" .
+
+person:440  name:  "Sylvester Stallone" .
+
+movie:199  playedBy:  person:420 , person:419 , person:418 ;
+        year:      "1967" ;
+        name:      "Absolvent" ;
+        url:       <http://www.imdb.com/title/tt0061722/?ref_=chttp_tt_199> .
+
+person:53  name:  "Charles Bronson" .
+
+movie:86  playedBy:  person:190 , person:189 , person:188 ;
+        year:      "1952" ;
+        name:      "Singin' in the Rain" ;
+        url:       <http://www.imdb.com/title/tt0045152/?ref_=chttp_tt_86> .
+
+person:195  name:  "Tsutomu Tatsumi" .
+
+person:117  name:  "Ralph Meeker" .
+
+movie:3  playedBy:  person:7 , person:6 , person:4 ;
+        year:      "1974" ;
+        name:      "Kmotr II" ;
+        url:       <http://www.imdb.com/title/tt0071562/?ref_=chttp_tt_3> .
+
+movie:167  playedBy:  person:68 , person:354 , person:67 ;
+        year:      "1954" ;
+        name:      "Dial M for Murder" ;
+        url:       <http://www.imdb.com/title/tt0046912/?ref_=chttp_tt_167> .
+
+person:21  name:  "Liam Neeson" .
+
+movie:54  playedBy:  person:123 , person:122 , person:99 ;
+        year:      "2000" ;
+        name:      "Gladiátor" ;
+        url:       <http://www.imdb.com/title/tt0172495/?ref_=chttp_tt_54> .
+
+person:163  name:  "Herbert Grönemeyer" .
+
+person:338  name:  "John Ford (dir.)" .
+
+movie:135  playedBy:  person:283 , person:282 , person:281 ;
+        year:      "2012" ;
+        name:      "Hon" ;
+        url:       <http://www.imdb.com/title/tt2106476/?ref_=chttp_tt_135> .
+
+person:384  name:  "Emilio Echevarría" .
+
+movie:22  playedBy:  person:27 , person:3 , person:26 ;
+        year:      "1995" ;
+        name:      "Sedm" ;
+        url:       <http://www.imdb.com/title/tt0114369/?ref_=chttp_tt_22> .
+
+person:131  name:  "Martina Gedeck" .
+
+person:306  name:  "Victor Fleming (dir.)" .
+
+movie:181  playedBy:  person:382 , person:381 , person:380 ;
+        year:      "2009" ;
+        name:      "Mary a Max" ;
+        url:       <http://www.imdb.com/title/tt0978762/?ref_=chttp_tt_181> .
+
+movie:103  playedBy:  person:224 , person:7 , person:38 ;
+        year:      "1980" ;
+        name:      "Zurící býk" ;
+        url:       <http://www.imdb.com/title/tt0081398/?ref_=chttp_tt_103> .
+
+person:352  name:  "Emile Hirsch" .
+
+person:320  name:  "Frank Miller (dir.)" .
+
+person:296  name:  "Gus Van Sant (dir.)" .
+
+person:218  name:  "Faye Dunaway" .
+
+person:264  name:  "David Lynch (dir.)" .
+
+person:439  name:  "John G. Avildsen (dir.)" .
+
+person:3  name:  "Morgan Freeman" .
+
+movie:236  playedBy:  person:496 , person:495 , person:281 ;
+        year:      "1998" ;
+        name:      "Rodinná oslava" ;
+        url:       <http://www.imdb.com/title/tt0154420/?ref_=chttp_tt_236> .
+
+person:485  name:  "Daniel Radcliffe" .
+
+person:232  name:  "Michael Caine" .
+
+person:98  name:  "Nicoletta Braschi" .
+
+person:407  name:  "Édgar Ramírez" .
+
+movie:204  playedBy:  person:430 , person:429 , person:418 ;
+        year:      "1966" ;
+        name:      "Who's Afraid of Virginia Woolf?" ;
+        url:       <http://www.imdb.com/title/tt0061184/?ref_=chttp_tt_204> .
+
+person:453  name:  "Ethan Hawke" .
+
+person:66  name:  "Karen Allen" .
+
+person:200  name:  "Joseph L. Mankiewicz (dir.)" .
+
+movie:99  playedBy:  person:218 , person:34 , person:102 ;
+        year:      "1974" ;
+        name:      "Chinatown" ;
+        url:       <http://www.imdb.com/title/tt0071315/?ref_=chttp_tt_99> .
+
+movie:250  playedBy:  person:524 , person:523 , person:522 ;
+        year:      "2009" ;
+        name:      "District 9" ;
+        url:       <http://www.imdb.com/title/tt1136608/?ref_=chttp_tt_250> .
+
+person:421  name:  "Bertil Guve" .
+
+person:34  name:  "Jack Nicholson" .
+
+movie:67  playedBy:  person:144 , person:143 , person:142 ;
+        year:      "2001" ;
+        name:      "Amélie z Montmartru" ;
+        url:       <http://www.imdb.com/title/tt0211915/?ref_=chttp_tt_67> .
+
+person:176  name:  "Walter Huston" .
+
+person:80  name:  "Charles Chaplin" .
+
+movie:148  playedBy:  person:208 , person:207 , person:206 ;
+        year:      "1969" ;
+        name:      "Butch Cassidy and the Sundance Kid" ;
+        url:       <http://www.imdb.com/title/tt0064115/?ref_=chttp_tt_148> .
+
+person:397  name:  "Howard Hawks (dir.)" .
+
+movie:35  playedBy:  person:82 , person:45 , person:20 ;
+        year:      "1998" ;
+        name:      "Zachrante vojína Ryana" ;
+        url:       <http://www.imdb.com/title/tt0120815/?ref_=chttp_tt_35> .
+
+person:144  name:  "Mathieu Kassovitz" .
+
+person:319  name:  "Tom Berenger" .
+
+movie:194  playedBy:  person:409 , person:408 , person:376 ;
+        year:      "1987" ;
+        name:      "The Princess Bride" ;
+        url:       <http://www.imdb.com/title/tt0093779/?ref_=chttp_tt_194> .
+
+movie:81  playedBy:  person:179 , person:178 , person:177 ;
+        year:      "1995" ;
+        name:      "Statecné srdce" ;
+        url:       <http://www.imdb.com/title/tt0112573/?ref_=chttp_tt_81> .
+
+person:190  name:  "Donald O'Connor" .
+
+movie:116  playedBy:  person:244 , person:243 , person:242 ;
+        year:      "2006" ;
+        name:      "Faunuv labyrint" ;
+        url:       <http://www.imdb.com/title/tt0457430/?ref_=chttp_tt_116> .
+
+person:365  name:  "Robert Downey Jr." .
+
+person:112  name:  "Omar Sy" .
+
+movie:162  playedBy:  person:344 , person:343 , person:342 ;
+        year:      "2013" ;
+        name:      "Rivalové" ;
+        url:       <http://www.imdb.com/title/tt1979320/?ref_=chttp_tt_162> .
+
+person:333  name:  "Hugo Weaving" .
+
+person:508  name:  "Joan Allen" .
+
+movie:130  playedBy:  person:273 , person:61 , person:175 ;
+        year:      "1941" ;
+        name:      "The Maltese Falcon" ;
+        url:       <http://www.imdb.com/title/tt0033870/?ref_=chttp_tt_130> .
+
+person:301  name:  "Sharon Stone" .
+
+person:522  name:  "Neill Blomkamp (dir.)" .
+
+person:277  name:  "Frances McDormand" .
+
+movie:249  playedBy:  person:521 , person:520 , person:519 ;
+        year:      "2007" ;
+        name:      "Ratatouille" ;
+        url:       <http://www.imdb.com/title/tt0382932/?ref_=chttp_tt_249> .
+
+person:498  name:  "J.J. Abrams (dir.)" .
+
+person:245  name:  "Oliver Hirschbiegel (dir.)" .
+
+person:291  name:  "Dexter Fletcher" .
+
+movie:217  playedBy:  person:262 , person:168 , person:457 ;
+        year:      "1973" ;
+        name:      "The Exorcist" ;
+        url:       <http://www.imdb.com/title/tt0070047/?ref_=chttp_tt_217> .
+
+person:466  name:  "John Dall" .
+
+person:213  name:  "Terry Gilliam (dir.)" .
+
+person:79  name:  "Charles Chaplin (dir.)" .
+
+person:434  name:  "Marcello Mastroianni" .
+
+person:47  name:  "Andy Wachowski (dir.)" .
+
+person:189  name:  "Gene Kelly" .
+
+movie:231  playedBy:  person:486 , person:485 , person:484 ;
+        year:      "2011" ;
+        name:      "Harry Potter a relikvie smrti: cást 2" ;
+        url:       <http://www.imdb.com/title/tt1201607/?ref_=chttp_tt_231> .
+
+person:480  name:  "Aleksandr Kaydanovskiy" .
+
+person:93  name:  "Peter Sellers" .
+
+person:402  name:  "Charles Laughton (dir.)" .
+
+person:15  name:  "Christian Bale" .
+
+movie:48  playedBy:  person:109 , person:34 , person:92 ;
+        year:      "1980" ;
+        name:      "Osvícení" ;
+        url:       <http://www.imdb.com/title/tt0081505/?ref_=chttp_tt_48> .
+
+person:157  name:  "Gregory Peck" .
+
+person:61  name:  "Humphrey Bogart" .
+
+movie:94  playedBy:  person:208 , person:207 , person:206 ;
+        year:      "1973" ;
+        name:      "The Sting" ;
+        url:       <http://www.imdb.com/title/tt0070735/?ref_=chttp_tt_94> .
+
+movie:129  playedBy:  person:272 , person:271 , person:67 ;
+        year:      "1940" ;
+        name:      "Rebecca" ;
+        url:       <http://www.imdb.com/title/tt0032976/?ref_=chttp_tt_129> .
+
+person:378  name:  "River Phoenix" .
+
+movie:16  playedBy:  person:42 , person:41 , person:40 ;
+        year:      "1954" ;
+        name:      "Sedm samuraju" ;
+        url:       <http://www.imdb.com/title/tt0047478/?ref_=chttp_tt_16> .
+
+person:125  name:  "Jamie Foxx" .
+
+movie:175  playedBy:  person:368 , person:367 , person:89 ;
+        year:      "2004" ;
+        name:      "Zámek v oblacích" ;
+        url:       <http://www.imdb.com/title/tt0347149/?ref_=chttp_tt_175> .
+
+movie:62  playedBy:  person:138 , person:137 , person:74 ;
+        year:      "1944" ;
+        name:      "Double Indemnity" ;
+        url:       <http://www.imdb.com/title/tt0036775/?ref_=chttp_tt_62> .
+
+person:171  name:  "Richard Marquand (dir.)" .
+
+person:346  name:  "Robert Shaw" .
+
+movie:143  playedBy:  person:300 , person:299 , person:298 ;
+        year:      "1961" ;
+        name:      "Judgment at Nuremberg" ;
+        url:       <http://www.imdb.com/title/tt0055031/?ref_=chttp_tt_143> .
+
+person:392  name:  "Jake Gyllenhaal" .
+
+movie:30  playedBy:  person:71 , person:70 , person:69 ;
+        year:      "1994" ;
+        name:      "Léon" ;
+        url:       <http://www.imdb.com/title/tt0110413/?ref_=chttp_tt_30> .
+
+person:314  name:  "Juan José Campanella (dir.)" .
+
+movie:111  playedBy:  person:236 , person:27 , person:8 ;
+        year:      "2009" ;
+        name:      "Hanebný pancharti" ;
+        url:       <http://www.imdb.com/title/tt0361748/?ref_=chttp_tt_111> .
+
+person:360  name:  "Dana Andrews" .
+
+person:503  name:  "Krzysztof Kieslowski (dir.)" .
+
+person:258  name:  "Marion Mack" .
+
+person:479  name:  "Alisa Freyndlikh" .
+
+person:226  name:  "Asghar Farhadi (dir.)" .
+
+person:272  name:  "Joan Fontaine" .
+
+person:447  name:  "Don Taylor" .
+
+movie:244  playedBy:  person:510 , person:509 , person:89 ;
+        year:      "1986" ;
+        name:      "Tenkû no shiro Rapyuta" ;
+        url:       <http://www.imdb.com/title/tt0092067/?ref_=chttp_tt_244> .
+
+person:493  name:  "Sam Neill" .
+
+person:240  name:  "Elia Kazan (dir.)" .
+
+person:415  name:  "Darsheel Safary" .
+
+person:28  name:  "Edward Norton" .
+
+movie:212  playedBy:  person:447 , person:75 , person:74 ;
+        year:      "1953" ;
+        name:      "Stalag 17" ;
+        url:       <http://www.imdb.com/title/tt0046359/?ref_=chttp_tt_212> .
+
+person:461  name:  "Sang-kyung Kim" .
+
+person:74  name:  "Billy Wilder (dir.)" .
+
+movie:29  playedBy:  person:68 , person:64 , person:67 ;
+        year:      "1954" ;
+        name:      "Rear Window" ;
+        url:       <http://www.imdb.com/title/tt0047396/?ref_=chttp_tt_29> .
+
+person:138  name:  "Barbara Stanwyck" .
+
+person:42  name:  "Takashi Shimura" .
+
+movie:188  playedBy:  person:396 , person:395 , person:394 ;
+        year:      "1982" ;
+        name:      "Gandhi" ;
+        url:       <http://www.imdb.com/title/tt0083987/?ref_=chttp_tt_188> .
+
+movie:75  playedBy:  person:166 , person:165 , person:164 ;
+        year:      "1994" ;
+        name:      "Lví král" ;
+        url:       <http://www.imdb.com/title/tt0110357/?ref_=chttp_tt_75> .
+
+person:184  name:  "R. Lee Ermey" .
+
+person:359  name:  "Fredric March" .
+
+person:106  name:  "Christopher Lloyd" .
+
+movie:156  playedBy:  person:328 , person:327 , person:326 ;
+        year:      "2004" ;
+        name:      "Hotel Rwanda" ;
+        url:       <http://www.imdb.com/title/tt0395169/?ref_=chttp_tt_156> .
+
+person:10  name:  "Uma Thurman" .
+
+movie:43  playedBy:  person:101 , person:100 , person:99 ;
+        year:      "1979" ;
+        name:      "Vetrelec" ;
+        url:       <http://www.imdb.com/title/tt0078748/?ref_=chttp_tt_43> .
+
+person:152  name:  "Enzo Cannavale" .
+
+person:327  name:  "Don Cheadle" .
+
+movie:124  playedBy:  person:263 , person:262 , person:261 ;
+        year:      "1957" ;
+        name:      "Det sjunde inseglet" ;
+        url:       <http://www.imdb.com/title/tt0050976/?ref_=chttp_tt_124> .
+
+person:373  name:  "François Truffaut (dir.)" .
+
+movie:11  playedBy:  person:29 , person:24 , person:23 ;
+        year:      "2001" ;
+        name:      "Pán prstenù: Spolecenstvo prstenu" ;
+        url:       <http://www.imdb.com/title/tt0120737/?ref_=chttp_tt_11> .
+
+person:120  name:  "Ellen Widmann" .
+
+movie:170  playedBy:  person:68 , person:362 , person:361 ;
+        year:      "1952" ;
+        name:      "High Noon" ;
+        url:       <http://www.imdb.com/title/tt0044706/?ref_=chttp_tt_170> .
+
+person:341  name:  "Frank Morgan" .
+
+person:516  name:  "Melinda Dillon" .
+
+person:239  name:  "Edna Purviance" .
+
+person:285  name:  "Claudette Colbert" .
+
+person:207  name:  "Paul Newman" .
+
+person:253  name:  "Jordan Nagai" .
+
+person:428  name:  "Jackie Gleason" .
+
+movie:225  playedBy:  person:471 , person:470 , person:89 ;
+        year:      "1984" ;
+        name:      "Kaze no tani no Naushika" ;
+        url:       <http://www.imdb.com/title/tt0087544/?ref_=chttp_tt_225> .
+
+person:474  name:  "Irrfan Khan" .
+
+person:87  name:  "Linda Hamilton" .
+
+person:221  name:  "Clint Eastwood (dir.)" .
+
+person:442  name:  "Mila Kunis" .
+
+person:55  name:  "Jodie Foster" .
+
+movie:88  playedBy:  person:196 , person:195 , person:194 ;
+        year:      "1988" ;
+        name:      "Hotaru no haka" ;
+        url:       <http://www.imdb.com/title/tt0095327/?ref_=chttp_tt_88> .
+
+person:197  name:  "Curtis Hanson (dir.)" .
+
+person:119  name:  "Peter Lorre" .
+
+movie:5  playedBy:  person:13 , person:12 , person:11 ;
+        year:      "1966" ;
+        name:      "Il buono, il brutto, il cattivo." ;
+        url:       <http://www.imdb.com/title/tt0060196/?ref_=chttp_tt_5> .
+
+person:410  name:  "Rajkumar Hirani (dir.)" .
+
+person:23  name:  "Peter Jackson (dir.)" .
+
+movie:169  playedBy:  person:360 , person:359 , person:358 ;
+        year:      "1946" ;
+        name:      "The Best Years of Our Lives" ;
+        url:       <http://www.imdb.com/title/tt0036868/?ref_=chttp_tt_169> .
+
+movie:56  playedBy:  person:126 , person:125 , person:8 ;
+        year:      "2012" ;
+        name:      "Nespoutany Django" ;
+        url:       <http://www.imdb.com/title/tt1853728/?ref_=chttp_tt_56> .
+
+person:165  name:  "Matthew Broderick" .
+
+movie:137  playedBy:  person:287 , person:207 , person:286 ;
+        year:      "1967" ;
+        name:      "Cool Hand Luke" ;
+        url:       <http://www.imdb.com/title/tt0061512/?ref_=chttp_tt_137> .
+
+person:386  name:  "Tom Hooper (dir.)" .
+
+movie:24  playedBy:  person:56 , person:55 , person:54 ;
+        year:      "1991" ;
+        name:      "Mlcení jehnátek" ;
+        url:       <http://www.imdb.com/title/tt0102926/?ref_=chttp_tt_24> .
+
+person:133  name:  "Michael Biehn" .
+
+person:308  name:  "Danny Boyle (dir.)" .
+
+movie:183  playedBy:  person:87 , person:86 , person:85 ;
+        year:      "1984" ;
+        name:      "The Terminator" ;
+        url:       <http://www.imdb.com/title/tt0088247/?ref_=chttp_tt_183> .
+
+movie:70  playedBy:  person:152 , person:151 , person:150 ;
+        year:      "1988" ;
+        name:      "Nuovo Cinema Paradiso" ;
+        url:       <http://www.imdb.com/title/tt0095765/?ref_=chttp_tt_70> .
+
+movie:105  playedBy:  person:228 , person:227 , person:226 ;
+        year:      "2011" ;
+        name:      "Rozchod Nadera a Simin" ;
+        url:       <http://www.imdb.com/title/tt1832382/?ref_=chttp_tt_105> .
+
+person:354  name:  "Ray Milland" .
+
+person:101  name:  "Tom Skerritt" .
+
+movie:151  playedBy:  person:316 , person:315 , person:314 ;
+        year:      "2009" ;
+        name:      "Tajemství jejich ocí" ;
+        url:       <http://www.imdb.com/title/tt1305806/?ref_=chttp_tt_151> .
+
+person:322  name:  "Clive Owen" .
+
+person:298  name:  "Stanley Kramer (dir.)" .
+
+person:511  name:  "Lewis Milestone (dir.)" .
+
+person:266  name:  "Victor Sjöström" .
+
+person:5  name:  "Marlon Brando" .
+
+movie:238  playedBy:  person:232 , person:271 , person:200 ;
+        year:      "1972" ;
+        name:      "Sleuth" ;
+        url:       <http://www.imdb.com/title/tt0069281/?ref_=chttp_tt_238> .
+
+person:487  name:  "Mathieu Kassovitz (dir.)" .
+
+person:234  name:  "Jason Statham" .
+
+person:409  name:  "Mandy Patinkin" .
+
+person:280  name:  "John Goodman" .
+
+movie:206  playedBy:  person:435 , person:434 , person:431 ;
+        year:      "1963" ;
+        name:      "8½" ;
+        url:       <http://www.imdb.com/title/tt0056801/?ref_=chttp_tt_206> .
+
+person:455  name:  "Otto Preminger (dir.)" .
+
+person:202  name:  "Anne Baxter" .
+
+person:68  name:  "Grace Kelly" .
+
+person:423  name:  "Sterling Hayden" .
+
+person:36  name:  "Leonardo DiCaprio" .
+
+movie:69  playedBy:  person:149 , person:148 , person:92 ;
+        year:      "1971" ;
+        name:      "Mechanický pomeranc" ;
+        url:       <http://www.imdb.com/title/tt0066921/?ref_=chttp_tt_69> .
+
+person:178  name:  "Mel Gibson" .
+
+movie:220  playedBy:  person:462 , person:157 , person:358 ;
+        year:      "1953" ;
+        name:      "Roman Holiday" ;
+        url:       <http://www.imdb.com/title/tt0046250/?ref_=chttp_tt_220> .
+
+person:82  name:  "Matt Damon" .
+
+person:399  name:  "Harold Ramis (dir.)" .
+
+movie:37  playedBy:  person:87 , person:86 , person:85 ;
+        year:      "1991" ;
+        name:      "Terminator 2: Judgment Day" ;
+        url:       <http://www.imdb.com/title/tt0103064/?ref_=chttp_tt_37> .
+
+person:146  name:  "Sandra Bullock" .
+
+movie:196  playedBy:  person:413 , person:6 , person:17 ;
+        year:      "1975" ;
+        name:      "Dog Day Afternoon" ;
+        url:       <http://www.imdb.com/title/tt0072890/?ref_=chttp_tt_196> .
+
+person:50  name:  "Fernando Meirelles (dir.)" .
+
+movie:83  playedBy:  person:184 , person:183 , person:92 ;
+        year:      "1987" ;
+        name:      "Full Metal Jacket" ;
+        url:       <http://www.imdb.com/title/tt0093058/?ref_=chttp_tt_83> .
+
+person:192  name:  "Lamberto Maggiorani" .
+
+movie:118  playedBy:  person:250 , person:249 , person:248 ;
+        year:      "1963" ;
+        name:      "The Great Escape" ;
+        url:       <http://www.imdb.com/title/tt0057115/?ref_=chttp_tt_118> .
+
+person:367  name:  "Chieko Baishô" .
+
+person:114  name:  "Orson Welles" .
+
+movie:164  playedBy:  person:348 , person:347 , person:67 ;
+        year:      "1951" ;
+        name:      "Strangers on a Train" ;
+        url:       <http://www.imdb.com/title/tt0044079/?ref_=chttp_tt_164> .
+
+movie:51  playedBy:  person:117 , person:116 , person:92 ;
+        year:      "1957" ;
+        name:      "Paths of Glory" ;
+        url:       <http://www.imdb.com/title/tt0050825/?ref_=chttp_tt_51> .
+
+person:160  name:  "Tim Roth" .
+
+person:335  name:  "Woody Allen (dir.)" .
+
+movie:132  playedBy:  person:277 , person:276 , person:275 ;
+        year:      "1996" ;
+        name:      "Fargo" ;
+        url:       <http://www.imdb.com/title/tt0116282/?ref_=chttp_tt_132> .
+
+person:381  name:  "Toni Collette" .
+
+person:303  name:  "Haley Joel Osment" .
+
+movie:100  playedBy:  person:220 , person:219 , person:92 ;
+        year:      "1968" ;
+        name:      "2001: A Space Odyssey" ;
+        url:       <http://www.imdb.com/title/tt0062622/?ref_=chttp_tt_100> .
+
+person:524  name:  "David James" .
+
+person:279  name:  "Jeff Bridges" .
+
+person:247  name:  "Alexandra Maria Lara" .
+
+person:293  name:  "Henri-Georges Clouzot (dir.)" .
+
+movie:219  playedBy:  person:461 , person:460 , person:459 ;
+        year:      "2003" ;
+        name:      "Pecet vraha - Vzpomínky na vraha" ;
+        url:       <http://www.imdb.com/title/tt0353969/?ref_=chttp_tt_219> .
+
+person:468  name:  "Johnny Depp" .
+
+person:215  name:  "John Cleese" .
+
+person:261  name:  "Ingmar Bergman (dir.)" .
+
+person:436  name:  "Wai-keung Lau (dir.)" .
+
+person:49  name:  "Laurence Fishburne" .
+
+movie:233  playedBy:  person:490 , person:12 , person:11 ;
+        year:      "1964" ;
+        name:      "Per un pugno di dollari" ;
+        url:       <http://www.imdb.com/title/tt0058461/?ref_=chttp_tt_233> .
+
+person:482  name:  "Mathieu Amalric" .
+
+person:95  name:  "Paulette Goddard" .
+
+person:404  name:  "Shelley Winters" .
+
+person:17  name:  "Sidney Lumet (dir.)" .
+
+person:159  name:  "Harvey Keitel" .
+
+movie:201  playedBy:  person:424 , person:423 , person:92 ;
+        year:      "1956" ;
+        name:      "The Killing" ;
+        url:       <http://www.imdb.com/title/tt0049406/?ref_=chttp_tt_201> .
+
+person:450  name:  "Dev Patel" .
+
+person:63  name:  "Frank Capra (dir.)" .
+
+movie:96  playedBy:  person:212 , person:211 , person:74 ;
+        year:      "1959" ;
+        name:      "Some Like It Hot" ;
+        url:       <http://www.imdb.com/title/tt0053291/?ref_=chttp_tt_96> .
+
+movie:18  playedBy:  person:46 , person:45 , person:44 ;
+        year:      "1994" ;
+        name:      "Forrest Gump" ;
+        url:       <http://www.imdb.com/title/tt0109830/?ref_=chttp_tt_18> .
+
+person:127  name:  "Sam Mendes (dir.)" .
+
+person:31  name:  "Mark Hamill" .
+
+movie:177  playedBy:  person:372 , person:371 , person:370 ;
+        year:      "2007" ;
+        name:      "Az na krev" ;
+        url:       <http://www.imdb.com/title/tt0469494/?ref_=chttp_tt_177> .
+
+movie:64  playedBy:  person:55 , person:7 , person:38 ;
+        year:      "1976" ;
+        name:      "Taxi Driver" ;
+        url:       <http://www.imdb.com/title/tt0075314/?ref_=chttp_tt_64> .
+
+person:173  name:  "Min-sik Choi" .
+
+person:348  name:  "Robert Walker" .
+
+movie:145  playedBy:  person:303 , person:230 , person:302 ;
+        year:      "1999" ;
+        name:      "Sestý smysl" ;
+        url:       <http://www.imdb.com/title/tt0167404/?ref_=chttp_tt_145> .
+
+person:394  name:  "Richard Attenborough (dir.)" .
+
+movie:32  playedBy:  person:76 , person:75 , person:74 ;
+        year:      "1950" ;
+        name:      "Sunset Blvd." ;
+        url:       <http://www.imdb.com/title/tt0043014/?ref_=chttp_tt_32> .
+
+person:141  name:  "Hugh Jackman" .
+
+person:316  name:  "Soledad Villamil" .
+
+movie:191  playedBy:  person:404 , person:403 , person:402 ;
+        year:      "1955" ;
+        name:      "The Night of the Hunter" ;
+        url:       <http://www.imdb.com/title/tt0048424/?ref_=chttp_tt_191> .
+
+movie:113  playedBy:  person:140 , person:45 , person:238 ;
+        year:      "1995" ;
+        name:      "Toy story - Príbeh hracek" ;
+        url:       <http://www.imdb.com/title/tt0114709/?ref_=chttp_tt_113> .
+
+person:362  name:  "Gary Cooper" .
+
+person:330  name:  "Kurt Russell" .
+
+person:505  name:  "Jean-Louis Trintignant" .
+
+person:228  name:  "Leila Hatami" .
+
+person:274  name:  "Bee Vang" .
+
+person:449  name:  "Marisa Berenson" .
+
+movie:246  playedBy:  person:5 , person:307 , person:240 ;
+        year:      "1951" ;
+        name:      "A Streetcar Named Desire" ;
+        url:       <http://www.imdb.com/title/tt0044081/?ref_=chttp_tt_246> .
+
+person:495  name:  "Ulrich Thomsen" .
+
+person:242  name:  "Guillermo del Toro (dir.)" .
+
+person:417  name:  "Soha Ali Khan" .
+
+movie:214  playedBy:  person:451 , person:450 , person:308 ;
+        year:      "2008" ;
+        name:      "Milionár z chatrce" ;
+        url:       <http://www.imdb.com/title/tt1010048/?ref_=chttp_tt_214> .
+
+person:463  name:  "John Frankenheimer (dir.)" .
+
+person:76  name:  "Gloria Swanson" .
+
+person:210  name:  "Alfred Abel" .
+
+person:431  name:  "Federico Fellini (dir.)" .
+
+person:44  name:  "Robert Zemeckis (dir.)" .
+
+movie:77  playedBy:  person:170 , person:7 , person:11 ;
+        year:      "1984" ;
+        name:      "Once Upon a Time in America" ;
+        url:       <http://www.imdb.com/title/tt0087843/?ref_=chttp_tt_77> .
+
+person:186  name:  "Yôji Matsuda" .
+
+person:90  name:  "Daveigh Chase" .
+
+person:108  name:  "Eva Marie Saint" .
+
+person:12  name:  "Clint Eastwood" .
+
+movie:158  playedBy:  person:334 , person:333 , person:332 ;
+        year:      "2005" ;
+        name:      "V jako Vendeta" ;
+        url:       <http://www.imdb.com/title/tt0434409/?ref_=chttp_tt_158> .
+
+movie:45  playedBy:  person:106 , person:105 , person:44 ;
+        year:      "1985" ;
+        name:      "Back to the Future" ;
+        url:       <http://www.imdb.com/title/tt0088763/?ref_=chttp_tt_45> .
+
+person:154  name:  "Peter O'Toole" .
+
+person:329  name:  "John Carpenter (dir.)" .
+
+movie:91  playedBy:  person:202 , person:201 , person:200 ;
+        year:      "1950" ;
+        name:      "All About Eve" ;
+        url:       <http://www.imdb.com/title/tt0042192/?ref_=chttp_tt_91> .
+
+movie:126  playedBy:  person:267 , person:266 , person:261 ;
+        year:      "1957" ;
+        name:      "Smultronstället" ;
+        url:       <http://www.imdb.com/title/tt0050986/?ref_=chttp_tt_126> .
+
+person:375  name:  "Albert Rémy" .
+
+movie:13  playedBy:  person:35 , person:34 , person:33 ;
+        year:      "1975" ;
+        name:      "One Flew Over the Cuckoo's Nest" ;
+        url:       <http://www.imdb.com/title/tt0073486/?ref_=chttp_tt_13> .
+
+person:122  name:  "Russell Crowe" .
+
+movie:172  playedBy:  person:75 , person:218 , person:17 ;
+        year:      "1976" ;
+        name:      "Network" ;
+        url:       <http://www.imdb.com/title/tt0074958/?ref_=chttp_tt_172> .
+
+person:343  name:  "Daniel Brühl" .
+
+person:518  name:  "Tom Cruise" .
+
+movie:140  playedBy:  person:114 , person:292 , person:113 ;
+        year:      "1958" ;
+        name:      "Touch of Evil" ;
+        url:       <http://www.imdb.com/title/tt0052311/?ref_=chttp_tt_140> .
+
+person:311  name:  "Ethan Coen (dir.)" .
+
+person:287  name:  "George Kennedy" .
+
+person:209  name:  "Brigitte Helm" .
+
+person:500  name:  "Zachary Quinto" .
+
+person:255  name:  "Michael Mann (dir.)" .
+
+movie:227  playedBy:  person:392 , person:141 , person:444 ;
+        year:      "2013" ;
+        name:      "Prisoners" ;
+        url:       <http://www.imdb.com/title/tt1392214/?ref_=chttp_tt_227> .
+
+person:476  name:  "Donnie Yen" .
+
+person:89  name:  "Hayao Miyazaki (dir.)" .
+
+person:223  name:  "Sean Connery" .
+
+person:444  name:  "Denis Villeneuve (dir.)" .
+
+person:57  name:  "Bryan Singer (dir.)" .
+
+person:199  name:  "Marlene Dietrich" .
+
+movie:241  playedBy:  person:502 , person:438 , person:501 ;
+        year:      "2000" ;
+        name:      "Fa yeung nin wa" ;
+        url:       <http://www.imdb.com/title/tt0118694/?ref_=chttp_tt_241> .
+
+person:490  name:  "Gian Maria Volonté" .
+
+movie:7  playedBy:  person:19 , person:18 , person:17 ;
+        year:      "1957" ;
+        name:      "12 Angry Men" ;
+        url:       <http://www.imdb.com/title/tt0050083/?ref_=chttp_tt_7> .
+
+person:412  name:  "Madhavan" .
+
+person:25  name:  "Viggo Mortensen" .
+
+movie:58  playedBy:  person:131 , person:130 , person:129 ;
+        year:      "2006" ;
+        name:      "Zivoty tech druhých" ;
+        url:       <http://www.imdb.com/title/tt0405094/?ref_=chttp_tt_58> .
+
+person:167  name:  "Darren Aronofsky (dir.)" .
+
+person:71  name:  "Gary Oldman" .
+
+movie:139  playedBy:  person:291 , person:290 , person:233 ;
+        year:      "1998" ;
+        name:      "Sbal prachy a vypadni" ;
+        url:       <http://www.imdb.com/title/tt0120735/?ref_=chttp_tt_139> .
+
+person:388  name:  "Geoffrey Rush" .
+
+movie:26  playedBy:  person:62 , person:61 , person:60 ;
+        year:      "1942" ;
+        name:      "Casablanca" ;
+        url:       <http://www.imdb.com/title/tt0034583/?ref_=chttp_tt_26> .
+
+person:135  name:  "Ben Burtt" .
+
+movie:185  playedBy:  person:389 , person:122 , person:342 ;
+        year:      "2001" ;
+        name:      "Cistá duse" ;
+        url:       <http://www.imdb.com/title/tt0268978/?ref_=chttp_tt_185> .
+
+movie:72  playedBy:  person:158 , person:157 , person:156 ;
+        year:      "1962" ;
+        name:      "To Kill a Mockingbird" ;
+        url:       <http://www.imdb.com/title/tt0056592/?ref_=chttp_tt_72> .
+
+person:181  name:  "Jim Carrey" .
+
+movie:107  playedBy:  person:232 , person:15 , person:14 ;
+        year:      "2005" ;
+        name:      "Batman zacíná" ;
+        url:       <http://www.imdb.com/title/tt0372784/?ref_=chttp_tt_107> .
+
+person:356  name:  "Jay Baruchel" .
+
+person:103  name:  "Adrien Brody" .
+
+movie:153  playedBy:  person:322 , person:321 , person:320 ;
+        year:      "2005" ;
+        name:      "Sin City - mesto hríchu" ;
+        url:       <http://www.imdb.com/title/tt0401792/?ref_=chttp_tt_153> .
+
+movie:40  playedBy:  person:94 , person:93 , person:92 ;
+        year:      "1964" ;
+        name:      "Dr. Divnoláska aneb Jak jsem se naucil nedelat si starosti a mít rád bombu" ;
+        url:       <http://www.imdb.com/title/tt0057012/?ref_=chttp_tt_40> .
+
+person:324  name:  "Gavin O'Connor (dir.)" .

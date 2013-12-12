@@ -6,7 +6,7 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import org.springframework.stereotype.Component;
 
-import java.io.OutputStream;
+import java.io.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,17 +38,14 @@ public class Triplifier {
 	private Map<String, Integer> movieIndex = new HashMap<>();
 	private Map<String, Integer> movieActorIndex = new HashMap<>();
 
-	public void triplify(Map<String, List<List<String>>> preparedData, OutputStream outputStream) {
-		initModel();
-
-		triplifyImdb(preparedData);
-		triplifyDvd(preparedData);
-		triplifyTwitterRating(preparedData);
-
-		model.write(outputStream, "Turtle");
+	public void triplify(Map<String, List<List<String>>> preparedData, String outputPath) throws IOException {
+		triplifyImdb(preparedData, outputPath);
+		triplifyDvd(preparedData, outputPath);
+		triplifyTwitterRating(preparedData, outputPath);
 	}
 
-	private void triplifyImdb(Map<String, List<List<String>>> preparedData) {
+	private void triplifyImdb(Map<String, List<List<String>>> preparedData, String outputPath) throws IOException {
+		initModel();
 		for (List<String> line : preparedData.get("imdb")) {
 			String movieUrl = line.get(0);
 			String movieActors = line.get(1);
@@ -67,10 +64,13 @@ public class Triplifier {
 			model.add(movie, name, movieName);
 			model.add(movie, url, createUrl(movieUrl));
 			model.add(movie, year, movieYear);
+
 		}
+		writeModel(outputPath, "imdb.ttl");
 	}
 
-	private void triplifyDvd(Map<String, List<List<String>>> preparedData) {
+	private void triplifyDvd(Map<String, List<List<String>>> preparedData, String outputPath) throws IOException {
+		initModel();
 		for (List<String> line : preparedData.get("dvd")) {
 			String movieName = line.get(0);
 			String movieStudio = line.get(1);
@@ -91,8 +91,11 @@ public class Triplifier {
 			model.add(movie, year, movieYear);
 			model.add(movie, productionCompany, movieStudio);
 		}
+		writeModel(outputPath, "dvd.ttl");
 	}
-	private void triplifyTwitterRating(Map<String, List<List<String>>> preparedData) {
+
+	private void triplifyTwitterRating(Map<String, List<List<String>>> preparedData, String outputPath) throws IOException {
+		initModel();
 		for (List<String> line : preparedData.get("twitter")) {
 			String movieName = line.get(1);
 			String movieYear = line.get(2);
@@ -112,6 +115,14 @@ public class Triplifier {
 			Resource aggregateRating = createAggregateRatingSubject(getIndexForMovie(movieName));
 			model.add(aggregateRating, ratingValue, movieRating);
 			model.add(movie, rating, aggregateRating);
+		}
+		writeModel(outputPath, "twitter.ttl");
+	}
+
+	private void writeModel(String outputPath, String outName) throws IOException {
+		File outputFile = new File(outputPath + "/" + outName);
+		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(outputFile))) {
+			model.write(bos, "Turtle");
 		}
 	}
 
