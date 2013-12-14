@@ -24,6 +24,9 @@ public class Triplifier {
 	private String nsRatingValue = "http://schema.org/ratingValue";
 	private String nsGenre = "http://schema.org/genre";
 	private String nsProductionCompany = "http://schema.org/productionCompany";
+	private String nsRdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+	private String nsRdfs = "http://www.w3.org/2000/01/rdf-schema#";
+	private String nsSchema = "http://schema.org/";
 
 	private Property url;
 	private Property actor;
@@ -33,6 +36,7 @@ public class Triplifier {
 	private Property genre;
 	private Property productionCompany;
 	private Property ratingValue;
+	private Property rdfType;
 
 	private Model model;
 	private Map<String, Integer> movieIndex = new HashMap<>();
@@ -58,13 +62,14 @@ public class Triplifier {
 				String movieActorName = movieActor.trim();
 				Resource person = createPerson(String.valueOf(getIndexForMovieActor(movieActor)));
 				model.add(person, name, movieActorName);
+				model.add(person, rdfType, model.createResource(nsSchema + "Person"));
 				model.add(movie, actor, person);
 			}
 
 			model.add(movie, name, movieName);
 			model.add(movie, url, createUrl(movieUrl));
 			model.add(movie, year, movieYear);
-
+			model.add(movie, rdfType, model.createResource(nsSchema + "Movie"));
 		}
 		writeModel(outputPath, "imdb.ttl");
 	}
@@ -90,6 +95,7 @@ public class Triplifier {
 			model.add(movie, url, createUrl(movieUrl));
 			model.add(movie, year, movieYear);
 			model.add(movie, productionCompany, movieStudio);
+			model.add(movie, rdfType, model.createResource(nsSchema + "Movie"));
 		}
 		writeModel(outputPath, "dvd.ttl");
 	}
@@ -115,7 +121,10 @@ public class Triplifier {
 			Resource aggregateRating = createAggregateRatingSubject(getIndexForMovie(movieName));
 			model.add(aggregateRating, ratingValue, movieRating);
 			model.add(movie, rating, aggregateRating);
+			model.add(movie, rdfType, model.createResource(nsSchema + "Movie"));
 		}
+
+
 		writeModel(outputPath, "twitter.ttl");
 	}
 
@@ -168,6 +177,9 @@ public class Triplifier {
 		model.setNsPrefix("name", nsName);
 		model.setNsPrefix("year", nsCopyrightYear);
 		model.setNsPrefix("productionCompany", nsProductionCompany);
+		model.setNsPrefix("rdf", nsRdf);
+		model.setNsPrefix("rdfs", nsRdfs);
+		model.setNsPrefix("schema", nsSchema);
 		model.setNsPrefix("ratingValue", nsRatingValue);
 
 		url = createPredicate(nsUrl);
@@ -178,6 +190,7 @@ public class Triplifier {
 		genre = createPredicate(nsGenre);
 		productionCompany = createPredicate(nsProductionCompany);
 		ratingValue = createPredicate(nsRatingValue);
+		rdfType = createPredicate(nsRdf + "type");
 	}
 
 	private Property createPredicate(String predicate) {
