@@ -3,4 +3,6 @@ download/triplifier/target/
 download/triplifier/triplifier.iml
 publishing/.idea/
 linking/.idea/
-
+app/.idea
+app/target
+app/app.iml
