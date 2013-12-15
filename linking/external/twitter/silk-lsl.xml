@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+	<Prefixes>
+		<Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+		<Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/>
+		<Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+		<Prefix id="schema" namespace="http://schema.org/"/>
+		<Prefix id="dbpedia" namespace="http://dbpedia.org/ontology/"/>
+	</Prefixes>
+
+	<DataSources>
+		<DataSource id="dbpedia" type="sparqlEndpoint">
+			<Param name="endpointURI" value="http://dbpedia.org/sparql" />
+			<Param name="retryCount" value="100"/>
+		</DataSource>
+		<DataSource id="twitter" type="file">
+			<Param name="file" value="/data/skola/MI-SWE/semestralka/download/output/twitter.ttl"/>
+			<Param name="format" value="TURTLE"/>
+		</DataSource>
+	</DataSources>
+
+	<Interlinks>
+		<Interlink id="movie">
+			<LinkType>owl:sameAs</LinkType>
+
+			<SourceDataset dataSource="twitter" var="a">
+				<RestrictTo>
+					?a rdf:type schema:Movie
+				</RestrictTo>
+			</SourceDataset>
+
+			<TargetDataset dataSource="dbpedia" var="b">
+				<RestrictTo>
+					?b rdf:type dbpedia:Film
+				</RestrictTo>
+			</TargetDataset>
+
+			<LinkageRule>
+				<Aggregate type="average">
+					<Aggregate type="max" required="true">
+						<Compare metric="jaro">
+							<TransformInput function="lowerCase">
+								<Input path="?a/schema:name"/>
+							</TransformInput>
+							<TransformInput function="lowerCase">
+								<Input path="?b/rdfs:label[@lang = 'en']" />
+							</TransformInput>
+						</Compare>
+					</Aggregate>
+				</Aggregate>
+			</LinkageRule>
+
+			<Filter/>
+
+			<Outputs>
+				<Output type="file" minConfidence="0.1">
+					<Param name="file" value="/data/skola/MI-SWE/semestralka/linking/external/twitter/moviesInDBPediaByName.nt"/>
+					<Param name="format" value="ntriples"/>
+				</Output>
+			</Outputs>
+		</Interlink>
+	</Interlinks>
+
+</Silk>

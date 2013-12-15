@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+:DBpedia rdf:type void:Dataset ;
+	foaf:homepage <http://dbpedia.org/> .
+
+:IMDB rdf:type void:Dataset ;
+	dcterms:title "IMDB top 250 movies" ;
+	dcterms:description "IMDB top 250 movies containins movies with actors and ranks" ;
+	void:dataDump <http://example.org/imdb.ttl> ;
+	dcterms:subject <http://dbpedia.org/ontology/Film> .
+
+:DBpedia void:subset :DBpedia2IMDB  .
+
+:DBpedia2IMDB rdf:type void:Linkset ;
+	void:linkPredicate owl:sameAs ;
+	void:target :DBpedia ;
+	void:target :IMDB .
