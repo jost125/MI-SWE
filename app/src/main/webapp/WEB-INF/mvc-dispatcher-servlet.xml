@@ -1,15 +1,42 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:context="http://www.springframework.org/schema/context"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="cz.fit.cvut.machaj20.movieapp.controller"/>
+	<context:component-scan base-package="cz.fit.cvut.machaj20.movieapp"/>
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/pages/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+	<bean class="cz.fit.cvut.machaj20.movieapp.model.ModelFactory" name="modelFactory">
+		<constructor-arg>
+			<map>
+				<entry key="/data/skola/MI-SWE/semestralka/download/output/imdb.ttl" value="TURTLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/download/output/dvd.ttl" value="TURTLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/download/output/twitter.ttl" value="TURTLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/linking/external/dvd/moviesInDBPediaByName.nt" value="N-TRIPLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/linking/external/imdb/moviesInDBPediaByName.nt" value="N-TRIPLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/linking/external/twitter/moviesInDBPediaByName.nt" value="N-TRIPLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/linking/internal/imdb/sameMoviesInDvd.nt" value="N-TRIPLE" />
+				<entry key="/data/skola/MI-SWE/semestralka/linking/internal/imdb/sameMoviesInTwitter.nt" value="N-TRIPLE" />
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.hp.hpl.jena.rdf.model.Model" name="model" factory-method="createModel" factory-bean="modelFactory"/>
+
+	<bean class="cz.fit.cvut.machaj20.movieapp.model.MovieDAO" name="movieDAO">
+		<constructor-arg ref="model"/>
+		<constructor-arg>
+			<map>
+				<entry key="rdf" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></entry>
+				<entry key="schema" value="http://schema.org/"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
 
 </beans>
