@@ -4,7 +4,9 @@ import java.util.List;
 
 public class Movie {
 
+	private String url;
 	private String name;
+	private String company;
 	private List<String> genres;
 	private List<String> years;
 
@@ -30,5 +32,21 @@ public class Movie {
 
 	public void setYears(List<String> years) {
 		this.years = years;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
 	}
 }

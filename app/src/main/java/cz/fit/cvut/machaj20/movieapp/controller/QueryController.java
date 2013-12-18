@@ -24,9 +24,7 @@ public class QueryController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String showResults(@ModelAttribute("query") QueryForm queryForm, BindingResult bindingResult, ModelMap model) {
-		Pair pair = movieDAO.getMoviesByName(queryForm.getName());
-		model.addAttribute("numberOfResults", pair.getKey());
-		model.addAttribute("results", pair.getValue());
+		model.addAttribute("results", movieDAO.getMoviesByName(queryForm.getName()));
 		model.addAttribute("command", queryForm);
 		return "results";
 	}

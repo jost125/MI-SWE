@@ -34,29 +34,37 @@ public class MovieDAO {
 		);
 	}
 
-	public Pair<Integer, List<Movie>> getMoviesByName(String name) {
+	public List<Movie> getMoviesByName(String name) {
 		return executeQuery(
-			"SELECT ?movieName (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
+			"SELECT ?movieName ?movieUrl ?movieCompany ?movieRating (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
 				"	?movie a schema:Movie; " +
-				"		schema:genre ?movieGenre; " +
-				"		schema:copyrightYear ?movieYear; " +
 				"		schema:name ?movieName . " +
-				" 		FILTER(regex(?movieName, \"" + escape(name) + "\", \"i\"))" +
+				" 		FILTER(regex(?movieName, \"" + escape(name) + "\", \"i\")) ." +
+				"		OPTIONAL { ?movie schema:productionCompany ?movieCompany } . " +
+				"		OPTIONAL { ?movie schema:genre ?movieGenre } . " +
+				"		OPTIONAL { ?movie schema:url ?movieUrl } . " +
+				"		OPTIONAL { ?movie schema:copyrightYear ?movieYear } . " +
+				"		OPTIONAL { ?movie schema:aggregateRating [ schema:ratingValue ?movieRating ] } . " +
 				"}" +
-				"GROUP BY ?movieName",
+				"GROUP BY ?movieName ?movieUrl ?movieCompany",
 			new MapCallback() {
 				@Override
-				public Pair<Integer, List<Movie>> execute(ResultSet resultSet) {
+				public List<Movie> execute(ResultSet resultSet) {
 					List<Movie> movies = new ArrayList<>();
 					while (resultSet.hasNext()) {
 						QuerySolution row = resultSet.next();
 						Movie movie = new Movie();
-						movie.setName(row.get("movieName").asLiteral().getString());
+						if (row.get("movieName") != null) movie.setName(row.get("movieName").asLiteral().getString());
+						if (row.get("movieUrl") != null) movie.setUrl(row.get("movieUrl").asResource().getURI());
+						if (row.get("movieCompany") != null) movie.setCompany(row.get("movieCompany").asLiteral().getString());
 						movie.setGenres(valueAsList(row, "movieGenres"));
 						movie.setYears(valueAsList(row, "movieYears"));
-						movies.add(movie);
+
+						if (movie.getName() != null) {
+							movies.add(movie);
+						}
 					}
-					return new Pair<>(resultSet.getRowNumber(), movies);
+					return movies;
 				}
 			}
 		);
