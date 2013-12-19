@@ -10,4 +10,4 @@ Zvolil jsem si 3 zdroje o filmech
 	- formát html
 	- link: http://www.imdb.com/
 
-Tool použitý pro triplifykaci
+Pro triplifikaci jsem použil Jena API v Javě.
