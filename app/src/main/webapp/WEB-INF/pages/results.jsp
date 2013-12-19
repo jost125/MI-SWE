@@ -59,14 +59,14 @@
                             <div>
                                 Genres:
                                 <c:forEach items="${result.genres}" var="genre">
-                                    <a href="/genre/${genre}" property="v:genre">${genre}</a>
+                                    <a href="?genre=${genre}" property="v:genre">${genre}</a>
                                 </c:forEach>
                             </div>
                         </c:if>
                         <c:if test="${result.company != null}">
                             <div>
                                 From company:
-                                <a href="/productionCompany/${result.company}" property="v:productionCompany">${result.company}</a>
+                                <a href="?company=${result.company}" property="v:productionCompany">${result.company}</a>
                             </div>
                         </c:if>
                     </div>

@@ -34,13 +34,27 @@ public class MovieDAO {
 		);
 	}
 
-	public List<Movie> getMoviesByName(String name) {
-
+	public List<Movie> getMoviesByFilter(Map<String, String> filters) {
+		StringBuilder filterQuery = new StringBuilder();
+		for (String column : filters.keySet()) {
+			String value = filters.get(column);
+			switch (column) {
+				case "movieName":
+					filterQuery.append(" 		FILTER(regex(?movieName, \"").append(escape(value)).append("\", \"i\")) .");
+					break;
+				case "movieGenre":
+					filterQuery.append(" 		FILTER(regex(?movieGenre, \"").append(escape(value)).append("\", \"i\")) .");
+					break;
+				case "movieCompany":
+					filterQuery.append(" 		FILTER(regex(?movieCompany, \"").append(escape(value)).append("\", \"i\")) .");
+					break;
+			}
+		}
 		return executeQuery(
 			"SELECT ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
 				"	?movieNode a schema:Movie; " +
 				"		schema:name ?movieName . " +
-				" 		FILTER(regex(?movieName, \"" + escape(name) + "\", \"i\")) ." +
+				filterQuery.toString() +
 				"		OPTIONAL { ?movieNode schema:productionCompany ?movieCompany } . " +
 				"		OPTIONAL { ?movieNode schema:genre ?movieGenre } . " +
 				"		OPTIONAL { ?movieNode schema:url ?movieUrl } . " +
@@ -48,7 +62,7 @@ public class MovieDAO {
 				"		OPTIONAL { ?movieNode schema:aggregateRating [ schema:ratingValue ?movieRating ] } . " +
 				"		OPTIONAL { ?movieNode owl:sameAs ?dbpediaUrl } . " +
 				"}" +
-				"GROUP BY ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl" +
+				"GROUP BY ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl " +
 				"ORDER BY ?movieRating",
 			new MapCallback() {
 				@Override
