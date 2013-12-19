@@ -1,8 +1,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xmlns:context="http://www.springframework.org/schema/context"
+		 xmlns:mvc="http://www.springframework.org/schema/mvc"
 		 xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<context:component-scan base-package="cz.fit.cvut.machaj20.movieapp"/>
@@ -28,8 +30,9 @@
 		<constructor-arg ref="model"/>
 		<constructor-arg>
 			<map>
-				<entry key="rdf" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></entry>
-				<entry key="schema" value="http://schema.org/"></entry>
+				<entry key="rdf" value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+				<entry key="schema" value="http://schema.org/" />
+				<entry key="owl" value="http://www.w3.org/2002/07/owl#" />
 			</map>
 		</constructor-arg>
 	</bean>

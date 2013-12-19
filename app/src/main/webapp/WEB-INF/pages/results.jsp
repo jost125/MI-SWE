@@ -1,6 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<!DOCTYPE html>
 <html>
 <body>
     <div style="height: 60px;">
@@ -17,32 +18,50 @@
 
     <c:if test="${fn:length(results) gt 0}">
         <c:forEach items="${results}" var="result" >
-            <div itemscope itemtype="http://schema.org/Movie">
+            <div about="${result.node}" xmlns:v="http://schema.org/#" xmlns:owl="http://www.w3.org/2002/07/owl#" typeof="v:Movie">
                 <div>
-                    <c:choose>
-                        <c:when test="${result.url != null}">
-                            <a href="${result.url}" itemprop="name">${result.name}</a>
-                        </c:when>
-                        <c:otherwise>
-                            <span itemprop="name">${result.name}</span>
-                        </c:otherwise>
-                    </c:choose>
+                    <span property="v:name">${result.name}</span>
                     (<c:forEach items="${result.years}" var="year">
-                        <span itemprop="copyrightYear">${year}</span>
+                        <span property="v:copyrightYear">${year}</span>
                     </c:forEach>)
+                    <c:if test="${result.url != null}">
+                        <a href="${result.url}">
+                            <i>
+                                <c:choose>
+                                    <c:when test="${result.urlType == 'DVD'}">
+                                        dvd
+                                    </c:when>
+                                    <c:otherwise>
+                                        imdb
+                                    </c:otherwise>
+                                </c:choose>
+                            </i>
+                        </a>
+                    </c:if>
+                    <c:if test="${result.dbpediaUrl != null}">
+                        <a about="${result.node}" property="owl:sameAs" content="${result.dbpediaUrl}" href="${result.dbpediaUrl}">
+                            <i>dbpedia</i>
+                        </a>
+                    </c:if>
                 </div>
+                <c:if test="${result.rating != null}">
+                    <div property="v:rating" typeof="v:AggregateRating">
+                        Rating:
+                        <span property="v:ratingValue">${result.rating}</span>/<span property="v:bestRating">10</span>
+                    </div>
+                </c:if>
                 <c:if test="${fn:length(result.genres) gt 0}">
                     <div>
                         Genres:
                         <c:forEach items="${result.genres}" var="genre">
-                            <a href="/genre/${genre}" itemprop="genre">${genre}</a>
+                            <a href="/genre/${genre}" property="v:genre">${genre}</a>
                         </c:forEach>
                     </div>
                 </c:if>
                 <c:if test="${result.company != null}">
                     <div>
                         From company:
-                        <a href="/productionCompany/${result.company}" itemprop="productionCompany">${result.company}</a>
+                        <a href="/productionCompany/${result.company}" property="v:productionCompany">${result.company}</a>
                     </div>
                 </c:if>
             </div>

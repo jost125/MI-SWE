@@ -36,17 +36,18 @@ public class MovieDAO {
 
 	public List<Movie> getMoviesByName(String name) {
 		return executeQuery(
-			"SELECT ?movieName ?movieUrl ?movieCompany ?movieRating (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
-				"	?movie a schema:Movie; " +
+			"SELECT ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
+				"	?movieNode a schema:Movie; " +
 				"		schema:name ?movieName . " +
 				" 		FILTER(regex(?movieName, \"" + escape(name) + "\", \"i\")) ." +
-				"		OPTIONAL { ?movie schema:productionCompany ?movieCompany } . " +
-				"		OPTIONAL { ?movie schema:genre ?movieGenre } . " +
-				"		OPTIONAL { ?movie schema:url ?movieUrl } . " +
-				"		OPTIONAL { ?movie schema:copyrightYear ?movieYear } . " +
-				"		OPTIONAL { ?movie schema:aggregateRating [ schema:ratingValue ?movieRating ] } . " +
+				"		OPTIONAL { ?movieNode schema:productionCompany ?movieCompany } . " +
+				"		OPTIONAL { ?movieNode schema:genre ?movieGenre } . " +
+				"		OPTIONAL { ?movieNode schema:url ?movieUrl } . " +
+				"		OPTIONAL { ?movieNode schema:copyrightYear ?movieYear } . " +
+				"		OPTIONAL { ?movieNode schema:aggregateRating [ schema:ratingValue ?movieRating ] } . " +
+				"		OPTIONAL { ?movieNode owl:sameAs ?dbpediaUrl } . " +
 				"}" +
-				"GROUP BY ?movieName ?movieUrl ?movieCompany",
+				"GROUP BY ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl",
 			new MapCallback() {
 				@Override
 				public List<Movie> execute(ResultSet resultSet) {
@@ -54,9 +55,12 @@ public class MovieDAO {
 					while (resultSet.hasNext()) {
 						QuerySolution row = resultSet.next();
 						Movie movie = new Movie();
+						if (row.get("movieNode") != null) movie.setNode(row.get("movieNode").asResource().getURI());
 						if (row.get("movieName") != null) movie.setName(row.get("movieName").asLiteral().getString());
 						if (row.get("movieUrl") != null) movie.setUrl(row.get("movieUrl").asResource().getURI());
 						if (row.get("movieCompany") != null) movie.setCompany(row.get("movieCompany").asLiteral().getString());
+						if (row.get("movieRating") != null) movie.setRating(String.valueOf((double)Math.round(row.get("movieRating").asLiteral().getDouble() * 100) / 100.0));
+						if (row.get("dbpediaUrl") != null) movie.setDbpediaUrl(row.get("dbpediaUrl").asResource().getURI());
 						movie.setGenres(valueAsList(row, "movieGenres"));
 						movie.setYears(valueAsList(row, "movieYears"));
 
