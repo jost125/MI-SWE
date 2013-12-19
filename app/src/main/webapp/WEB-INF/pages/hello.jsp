@@ -7,12 +7,19 @@
     <link href="<c:url value="/resources/css/bootstrap-responsive.min.css" />" type="text/css" rel="stylesheet" media="screen" />
 </head>
 <body>
-	<h1>Number of distinct movie titles: ${moviesCount}</h1>
-    <form:form method="GET" action="/search">
-        <form:label path="name">What movie are you looking for?</form:label>
-        <form:input path="name" />
-        <input type="submit" value="Find" />
-    </form:form>
+
+    <div class="container" style="padding-top: 30px;">
+        <div class="row" style="text-align: center;">
+            <h1>Movie seeker</h1>
+            <div style="padding-bottom: 15px;">${moviesCount} movies in database</div>
+        </div>
+        <div class="row">
+            <form:form method="GET" action="/search" cssClass="form-search">
+                <form:input cssClass="span10" path="name" placeholder="What movie are you looking for?" />
+                <input class="span2 btn btn-primary" type="submit" value="Search" />
+            </form:form>
+        </div>
+    </div>
     <script src="/resources/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

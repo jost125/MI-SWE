@@ -35,6 +35,7 @@ public class MovieDAO {
 	}
 
 	public List<Movie> getMoviesByName(String name) {
+
 		return executeQuery(
 			"SELECT ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl (GROUP_CONCAT(distinct ?movieGenre ; separator = \",\") AS ?movieGenres) (GROUP_CONCAT(distinct ?movieYear ; separator = \",\") AS ?movieYears) WHERE {" +
 				"	?movieNode a schema:Movie; " +
@@ -47,7 +48,8 @@ public class MovieDAO {
 				"		OPTIONAL { ?movieNode schema:aggregateRating [ schema:ratingValue ?movieRating ] } . " +
 				"		OPTIONAL { ?movieNode owl:sameAs ?dbpediaUrl } . " +
 				"}" +
-				"GROUP BY ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl",
+				"GROUP BY ?movieNode ?movieName ?movieUrl ?movieCompany ?movieRating ?dbpediaUrl" +
+				"ORDER BY ?movieRating",
 			new MapCallback() {
 				@Override
 				public List<Movie> execute(ResultSet resultSet) {
