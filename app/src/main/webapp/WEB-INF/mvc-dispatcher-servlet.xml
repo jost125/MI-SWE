@@ -8,6 +8,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<context:component-scan base-package="cz.fit.cvut.machaj20.movieapp"/>
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:annotation-driven />
 
 	<bean class="cz.fit.cvut.machaj20.movieapp.model.ModelFactory" name="modelFactory">
 		<constructor-arg>
